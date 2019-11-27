@@ -1,0 +1,47 @@
+{
+  "events": [
+    {
+      "_id": 1,
+      "name": "Beer festival",
+      "location": {
+        "Coords": {
+          "lat": 34.77318,
+          "lng": 32.097768
+        },
+        "name": "Tel aviv port"
+      },
+      "desc": "An amazing event with lots of booze!",
+      "imgs": [],
+      "creatorId": "",
+      "isPopular": " Boolean",
+      "createdAt": "Date.now()",
+      "time": {
+        "start": "",
+        "end": ""
+      },
+      "Price": 80,
+      "attendsIds": ""
+    }
+  ],
+  "comments": [
+    {
+      "_id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "users": [
+    {
+      "name": "Puki",
+      "password": "123",
+      "_id": 1,
+      "img": "",
+      "events": {
+        "createdIds": [],
+        "attendIds": []
+      },
+      "createdAt": "Date.now()",
+      "isAdmin": false
+    }
+  ]
+}

@@ -1,7 +1,7 @@
 {
-  "events": [
+  "eventos": [
     {
-      "_id": 1,
+      "_id": 3,
       "name": "Beer festival",
       "location": {
         "Coords": {
@@ -16,7 +16,52 @@
       "isPopular": " Boolean",
       "createdAt": "Date.now()",
       "time": {
-        "start": "",
+        "start": 1512345123456,
+        "end": ""
+      },
+      "Price": 80,
+      "attendsIds": ""
+    },
+    {
+      "_id": 3,
+      "name": "Beer festival",
+      "location": {
+        "Coords": {
+          "lat": 34.77318,
+          "lng": 32.097768
+        },
+        "name": "Tel aviv port"
+      },
+      "desc": "An amazing event with lots of booze!",
+      "imgs": [],
+      "creatorId": "",
+      "isPopular": " Boolean",
+      "createdAt": "Date.now()",
+      "time": {
+        "start": 1512345123456,
+        "end": ""
+      },
+      "Price": 80,
+      "attendsIds": "",
+      "category": "Tst"
+    },
+    {
+      "_id": 3,
+      "name": "Beer festival",
+      "location": {
+        "Coords": {
+          "lat": 34.77318,
+          "lng": 32.097768
+        },
+        "name": "Tel aviv port"
+      },
+      "desc": "An amazing event with lots of booze!",
+      "imgs": [],
+      "creatorId": "",
+      "isPopular": " Boolean",
+      "createdAt": "Date.now()",
+      "time": {
+        "start": 1512345123456,
         "end": ""
       },
       "Price": 80,
@@ -30,9 +75,9 @@
       "postId": 1
     }
   ],
-  "users": [
+  "user": [
     {
-      "name": "Puki",
+      "username": "Puki",
       "password": "123",
       "_id": 1,
       "img": "",
@@ -42,6 +87,18 @@
       },
       "createdAt": "Date.now()",
       "isAdmin": false
+    },
+    {
+      "username": "Aviv",
+      "password": "12345",
+      "isAdmin": false,
+      "img": "",
+      "createdAt": 1574871039453,
+      "events": {
+        "createdIds": [],
+        "attendIds": []
+      },
+      "_id": 2
     }
   ]
 }

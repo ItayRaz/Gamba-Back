@@ -1,8 +1,7 @@
 {
-  "events": [
+  "eventos": [
     {
-      "_id": 1,
-      "name": "Beer festival",
+      "name": "Beer Festival",
       "location": {
         "Coords": {
           "lat": 34.77318,
@@ -10,17 +9,18 @@
         },
         "name": "Tel aviv port"
       },
-      "desc": "An amazing event with lots of booze!",
+      "desc": "adf,jhgasdf asdjskh sdlfjS DLFKJSDH FKJSDFH LAKSDJF ",
       "imgs": [],
       "creatorId": "",
-      "isPopular": " Boolean",
-      "createdAt": "Date.now()",
+      "createdAt": 1574933101510,
+      "Price": 0,
+      "attendsIds": [],
       "time": {
-        "start": "",
-        "end": ""
+        "start": 1574978400000,
+        "duration": 6
       },
-      "Price": 80,
-      "attendsIds": ""
+      "price": 80,
+      "_id": 1
     }
   ],
   "comments": [

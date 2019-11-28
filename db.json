@@ -1,4 +1,31 @@
 {
+  "user": [
+    {
+      "username": "Aviv",
+      "password": "12345",
+      "_id": "12345",
+      "isAdmin": true,
+      "about": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cum, fuga accusamus! A, repellendus, doloribus excepturi accusamus rem odit delectus consectetur minus distinctio voluptatibus pariatur veniam eligendi culpa esse nihil quis.",
+      "img": "https://api.adorable.io/avatars/285/aviv.png",
+      "createdAt": 1574952586961
+    },
+    {
+      "username": "Paz",
+      "password": "123",
+      "_id": "123",
+      "isAdmin": false,
+      "img": "https://api.adorable.io/avatars/285/paz.png",
+      "createdAt": 1574952586961
+    },
+    {
+      "username": "Itai",
+      "password": "1234",
+      "_id": "1234",
+      "isAdmin": false,
+      "img": "https://api.adorable.io/avatars/285/itai.png",
+      "createdAt": 1574952586961
+    }
+  ],
   "eventos": [
     {
       "_id": 1223,
@@ -24,8 +51,8 @@
       },
       "createdAt": "Date.now()",
       "time": {
-        "start": 1574978400000,
-        "duration": 6
+        "start": 1512345123456,
+        "end": ""
       },
       "price": 80,
       "members": [
@@ -64,7 +91,7 @@
         "https://secure.meetupstatic.com/photos/event/9/9/7/0/600_486939280.jpeg"
       ],
       "creator": {
-        "_id": "dkjhkjhdkd",
+        "_id": "12345",
         "name": "Rakefet toviki",
         "img": "https://imgix.bustle.com/elite-daily/2015/09/06042857/elitedaily-guille-faingold-woman.jpg?w=1020&h=574&fit=crop&crop=faces&auto=format&q=70&dpr=2"
       },
@@ -110,7 +137,7 @@
         "https://secure.meetupstatic.com/photos/event/9/9/7/0/600_486939280.jpeg"
       ],
       "creator": {
-        "_id": "dkjhkjhdkd",
+        "_id": "12345",
         "name": "Rakefet toviki",
         "img": "https://imgix.bustle.com/elite-daily/2015/09/06042857/elitedaily-guille-faingold-woman.jpg?w=1020&h=574&fit=crop&crop=faces&auto=format&q=70&dpr=2"
       },
@@ -122,9 +149,9 @@
       "price": 80,
       "members": [
         {
-          "name": "Avi zagori",
-          "img": "https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500",
-          "_id":"ljdlkjfldfj"
+          "name": "Aviv",
+          "img": "https://api.adorable.io/avatars/285/aviv.png",
+          "_id":"12345"
         },
         {
           "name":"Noni benito",

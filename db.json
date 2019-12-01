@@ -1,12 +1,118 @@
 {
+  "user": [
+    {
+      "username": "Aviv",
+      "password": "12345",
+      "_id": "12345",
+      "isAdmin": true,
+      "about": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cum, fuga accusamus! A, repellendus, doloribus excepturi accusamus rem odit delectus consectetur minus distinctio voluptatibus pariatur veniam eligendi culpa esse nihil quis.",
+      "img": "https://api.adorable.io/avatars/285/aviv.png",
+      "createdAt": 1574952586961
+    },
+    {
+      "username": "Paz",
+      "password": "123",
+      "_id": "123",
+      "isAdmin": false,
+      "img": "https://api.adorable.io/avatars/285/paz.png",
+      "createdAt": 1574952586961
+    },
+    {
+      "username": "Itai",
+      "password": "1234",
+      "_id": "1234",
+      "isAdmin": false,
+      "img": "https://api.adorable.io/avatars/285/itai.png",
+      "createdAt": 1574952586961
+    },
+    {
+      "username": "Paz",
+      "password": "123",
+      "isAdmin": false,
+      "img": "https://robohash.org/45",
+      "createdAt": 1575035197053,
+      "_id": "kAl5-m1"
+    }
+  ],
   "eventos": [
     {
       "_id": 1223,
+      "title": "Summer party",
+      "location": {
+        "Coords": {
+          "lat": 32.100033,
+          "lng": 34.805509
+        },
+        "name": "Tel aviv port"
+      },
+      "desc": "The main goal of this group is growing the Israeli Startups ecosystem and helping the early stage entrepreuners in building their venutres. TLV Startup Hub is an open non-profit independent group, which is not associated with any company or organization.Come and meet the Israeli entrepreneurs, technology gurus, investors and advisers who share their vision, technologies and business experience. Get an advice on your 'next-big-idea' and help others to develop their venture. Network, learn and mentor helping Israeli high-tech industry growth.",
+      "imgs": [
+        "https://hire4event.com/blogs/wp-content/uploads/2019/03/best-Event-company-in-Greater-Noida--1024x598.jpg",
+        "https://secure.meetupstatic.com/photos/event/9/9/7/4/600_486939284.jpeg",
+        "https://secure.meetupstatic.com/photos/event/9/9/6/d/600_486939277.jpeg",
+        "https://secure.meetupstatic.com/photos/event/9/9/6/0/600_486939264.jpeg",
+        "https://secure.meetupstatic.com/photos/event/9/9/7/0/600_486939280.jpeg",
+        "https://hire4event.com/blogs/wp-content/uploads/2019/03/best-Event-company-in-Greater-Noida--1024x598.jpg"
+      ],
+      "creator": {
+        "_id": "dkjhkjhdkd",
+        "name": "Rakefet toviki",
+        "img": "https://imgix.bustle.com/elite-daily/2015/09/06042857/elitedaily-guille-faingold-woman.jpg?w=1020&h=574&fit=crop&crop=faces&auto=format&q=70&dpr=2"
+      },
+      "createdAt": "Date.now()",
+      "price": 80,
+      "members": [
+        {
+          "name": "ABdhkh"
+        },
+        {
+          "name": "AVIV"
+        },
+        {
+          "name": "Itay Raz"
+        },
+        {
+          "name": "Paz Gerti"
+        },
+        {
+          "name": "Avi zagori",
+          "img": "https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500",
+          "_id": "ljdlkjfldfj"
+        },
+        {
+          "name": "Noni benito",
+          "img": "https://images.pexels.com/photos/736716/pexels-photo-736716.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500",
+          "_id": "jdhkssjhd"
+        },
+        {
+          "name": "Saoni erto",
+          "img": "https://images.pexels.com/photos/1222271/pexels-photo-1222271.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500",
+          "_id": "jiuydsidjhd"
+        },
+        {
+          "name": "Mar eroko",
+          "img": "https://images.pexels.com/photos/1300402/pexels-photo-1300402.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500",
+          "_id": "jddyiuyhd"
+        },
+        {
+          "name": "Gige etami",
+          "img": "https://images.pexels.com/photos/839011/pexels-photo-839011.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500",
+          "_id": "jiuydsejljhd"
+        },
+        {
+          "name": "Bamo moka",
+          "img": "https://images.pexels.com/photos/1516680/pexels-photo-1516680.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500",
+          "_id": "jiuydsdskjhd"
+        }
+      ]
+    },
+    {
+      "_id": 1223,
       "title": "House party",
       "location": {
         "Coords": {
-          "lat": 34.72218,
-          "lng": 32.097768
+          "lat": 32.111103,
+          "lng": 34.855909
         },
         "name": "Tel aviv port"
       },
@@ -20,7 +126,7 @@
         "https://hire4event.com/blogs/wp-content/uploads/2019/03/best-Event-company-in-Greater-Noida--1024x598.jpg"
       ],
       "creator": {
-        "_id": "dkjhkjhdkd",
+        "_id": "12345",
         "name": "Rakefet toviki",
         "img": "https://imgix.bustle.com/elite-daily/2015/09/06042857/elitedaily-guille-faingold-woman.jpg?w=1020&h=574&fit=crop&crop=faces&auto=format&q=70&dpr=2"
       },
@@ -50,11 +156,11 @@
     },
     {
       "_id": 1223,
-      "title": "House party",
+      "title": "Pool party",
       "location": {
         "Coords": {
-          "lat": 34.72218,
-          "lng": 32.097768
+          "lat": 32.109333,
+          "lng": 34.820099
         },
         "name": "Tel aviv port"
       },
@@ -68,7 +174,7 @@
         "https://hire4event.com/blogs/wp-content/uploads/2019/03/best-Event-company-in-Greater-Noida--1024x598.jpg"
       ],
       "creator": {
-        "_id": "dkjhkjhdkd",
+        "_id": "12345",
         "name": "Rakefet toviki",
         "img": "https://imgix.bustle.com/elite-daily/2015/09/06042857/elitedaily-guille-faingold-woman.jpg?w=1020&h=574&fit=crop&crop=faces&auto=format&q=70&dpr=2"
       },
@@ -80,9 +186,9 @@
       "Price": 80,
       "members": [
         {
-          "name": "Avi zagori",
-          "img": "https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500",
-          "_id": "ljdlkjfldfj"
+          "name": "Aviv",
+          "img": "https://api.adorable.io/avatars/285/aviv.png",
+          "_id": "12345"
         },
         {
           "name": "Noni benito",
@@ -97,61 +203,74 @@
       ]
     },
     {
-      "_id": 1223,
-      "title": "House party",
+      "name": "popo",
       "location": {
         "Coords": {
-          "lat": 34.72218,
-          "lng": 32.097768
+          "lat": 32.109333,
+          "lng": 34.855499
         },
         "name": "Tel aviv port"
       },
-      "mainImg": "https://hire4event.com/blogs/wp-content/uploads/2019/03/best-Event-company-in-Greater-Noida--1024x598.jpg",
-      "desc": "The main goal of this group is growing the Israeli Startups ecosystem and helping the early stage entrepreuners in building their venutres. TLV Startup Hub is an open non-profit independent group, which is not associated with any company or organization.Come and meet the Israeli entrepreneurs, technology gurus, investors and advisers who share their vision, technologies and business experience. Get an advice on your 'next-big-idea' and help others to develop their venture. Network, learn and mentor helping Israeli high-tech industry growth.",
-      "imgs": [
-        "https://secure.meetupstatic.com/photos/event/9/9/7/4/600_486939284.jpeg",
-        "https://secure.meetupstatic.com/photos/event/9/9/6/d/600_486939277.jpeg",
-        "https://secure.meetupstatic.com/photos/event/9/9/6/0/600_486939264.jpeg",
-        "https://secure.meetupstatic.com/photos/event/9/9/7/0/600_486939280.jpeg",
-        "https://hire4event.com/blogs/wp-content/uploads/2019/03/best-Event-company-in-Greater-Noida--1024x598.jpg"
-      ],
-      "creator": {
-        "_id": "dkjhkjhdkd",
-        "name": "Rakefet toviki",
-        "img": "https://imgix.bustle.com/elite-daily/2015/09/06042857/elitedaily-guille-faingold-woman.jpg?w=1020&h=574&fit=crop&crop=faces&auto=format&q=70&dpr=2"
-      },
-      "createdAt": "Date.now()",
+      "desc": "kjgkuyf ,jhf ,jhf ,jhf,jyhf jhf ,jhfh",
+      "imgs": [],
+      "creatorId": "",
+      "createdAt": 1574961225449,
+      "Price": 0,
+      "attendsIds": [],
       "time": {
-        "start": "",
-        "end": ""
+        "start": 1574978400000,
+        "duration": 9
       },
-      "Price": 80,
-      "members": [
-        {
-          "name": "Avi zagori",
-          "img": "https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500",
-          "_id": "ljdlkjfldfj"
+      "category": "",
+      "price": 4,
+      "_id": 1224
+    },
+    {
+      "title": "moki",
+      "location": {
+        "Coords": {
+          "lat": 32.10931,
+          "lng": 34.85548
         },
-        {
-          "name": "Noni benito",
-          "img": "https://images.pexels.com/photos/736716/pexels-photo-736716.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500",
-          "_id": "jdhkssjhd"
+        "name": "Tel aviv port"
+      },
+      "desc": "its going to be crazy!!",
+      "imgs": [],
+      "creatorId": "",
+      "createdAt": 1575028775455,
+      "price": 6,
+      "attendsIds": [],
+      "time": {
+        "start": 1575028719736,
+        "duration": 3
+      },
+      "categories": "",
+      "_id": 1225
+    },
+    {
+      "title": "djhkhk",
+      "location": {
+        "Coords": {
+          "lat": 0,
+          "lng": 0
         },
-        {
-          "name": "Saoni erto",
-          "img": "https://images.pexels.com/photos/1222271/pexels-photo-1222271.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500",
-          "_id": "jiuydsidjhd"
-        }
-      ]
+        "name": ""
+      },
+      "desc": "dhdkdh",
+      "imgs": [
+        "http://res.cloudinary.com/dfsjcqagx/image/upload/v1575183249/gbtx3bm3encgpilznlme.jpg",
+        "http://res.cloudinary.com/dfsjcqagx/image/upload/v1575183250/fsuoduk6meo4sidaybtl.jpg"
+      ],
+      "creator": {},
+      "createdAt": 1575183162951,
+      "price": 2,
+      "members": [],
+      "time": {
+        "start": 1575183162951,
+        "duration": 2
+      },
+      "categories": [],
+      "_id": 1226
     }
-  ],
-  "user": {
-    "username": "Aviv",
-    "password": "12345",
-    "_id": "12345",
-    "isAdmin": true,
-    "about": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cum, fuga accusamus! A, repellendus, doloribus excepturi accusamus rem odit delectus consectetur minus distinctio voluptatibus pariatur veniam eligendi culpa esse nihil quis.",
-    "img": "https://api.adorable.io/avatars/285/aviv.png",
-    "createdAt": 1574952586961
-  }
+  ]
 }

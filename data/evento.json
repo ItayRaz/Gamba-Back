@@ -1,0 +1,120 @@
+[
+  {
+    "name": "tsts",
+    "location": {
+      "Coords": {
+        "lat": 34.77318,
+        "lng": 32.097768
+      },
+      "name": "Tel aviv port"
+    },
+    "desc": ";lkjh",
+    "imgs": [],
+    "creatorId": "",
+    "createdAt": 1575059510453,
+    "Price": 0,
+    "attendsIds": [],
+    "time": {
+      "start": 1574287200000,
+      "duration": 19
+    },
+    "category": "",
+    "price": 15,
+    "_id": "101516EB8DD12272172",
+    "members": []
+  },
+  {
+    "title": "House party",
+    "location": {
+      "Coords": {
+        "lat": 34.72218,
+        "lng": 32.097768
+      },
+      "name": "Tel aviv port"
+    },
+    "desc": "The main goal of this group is growing the Israeli Startups ecosystem and helping the early stage entrepreuners in building their venutres. TLV Startup Hub is an open non-profit independent group, which is not associated with any company or organization.Come and meet the Israeli entrepreneurs, technology gurus, investors and advisers who share their vision, technologies and business experience. Get an advice on your 'next-big-idea' and help others to develop their venture. Network, learn and mentor helping Israeli high-tech industry growth.",
+    "imgs": [
+      "https://secure.meetupstatic.com/photos/event/9/9/7/4/600_486939284.jpeg",
+      "https://secure.meetupstatic.com/photos/event/9/9/6/d/600_486939277.jpeg",
+      "https://secure.meetupstatic.com/photos/event/9/9/6/0/600_486939264.jpeg",
+      "https://secure.meetupstatic.com/photos/event/9/9/7/0/600_486939280.jpeg"
+    ],
+    "creatorId": "123",
+    "creator": {
+      "_id": "123",
+      "name": "Paz",
+      "img": "https://api.adorable.io/avatars/285/paz.png"
+    },
+    "createdAt": 1574952586961,
+    "time": {
+      "start": 1512345123456,
+      "dowration": 6
+    },
+    "Price": 80,
+    "members": [
+      {
+        "name": "Aviv",
+        "img": "https://api.adorable.io/avatars/285/aviv.png",
+        "_id": "12345"
+      },
+      {
+        "name": "Itai",
+        "img": "https://api.adorable.io/avatars/285/itai.png",
+        "_id": "1234"
+      },
+      {
+        "name": "Saoni erto",
+        "img": "https://images.pexels.com/photos/1222271/pexels-photo-1222271.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500",
+        "_id": "jiuydsidjhd"
+      }
+    ],
+    "_id": "191816EB7F3352C22BD"
+  },
+  {
+    "_id": "1223",
+    "title": "House party",
+    "location": {
+      "Coords": {
+        "lat": 34.72218,
+        "lng": 32.097768
+      },
+      "name": "Tel aviv port"
+    },
+    "desc": "The main goal of this group is growing the Israeli Startups ecosystem and helping the early stage entrepreuners in building their venutres. TLV Startup Hub is an open non-profit independent group, which is not associated with any company or organization.Come and meet the Israeli entrepreneurs, technology gurus, investors and advisers who share their vision, technologies and business experience. Get an advice on your 'next-big-idea' and help others to develop their venture. Network, learn and mentor helping Israeli high-tech industry growth.",
+    "imgs": [
+      "https://secure.meetupstatic.com/photos/event/9/9/7/4/600_486939284.jpeg",
+      "https://secure.meetupstatic.com/photos/event/9/9/6/d/600_486939277.jpeg",
+      "https://secure.meetupstatic.com/photos/event/9/9/6/0/600_486939264.jpeg",
+      "https://secure.meetupstatic.com/photos/event/9/9/7/0/600_486939280.jpeg"
+    ],
+    "creatorId": "12345",
+    "creator": {
+      "_id": "12345",
+      "name": "Aviv",
+      "img": "https://api.adorable.io/avatars/285/aviv.png"
+    },
+    "createdAt": 1574952586961,
+    "time": {
+      "start": 1512345123456,
+      "dowration": 6
+    },
+    "Price": 80,
+    "members": [
+      {
+        "name": "Paz",
+        "img": "https://api.adorable.io/avatars/285/paz.png",
+        "_id": "123"
+      },
+      {
+        "name": "Itai",
+        "img": "https://api.adorable.io/avatars/285/itai.png",
+        "_id": "1234"
+      },
+      {
+        "name": "Saoni erto",
+        "img": "https://images.pexels.com/photos/1222271/pexels-photo-1222271.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500",
+        "_id": "jiuydsidjhd"
+      }
+    ]
+  }
+]

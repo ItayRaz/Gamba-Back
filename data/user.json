@@ -1,0 +1,44 @@
+[
+  {
+    "username": "tst2",
+    "password": "tst2",
+    "isAdmin": false,
+    "img": "",
+    "createdAt": 1575059235077,
+    "_id": "EAC16EB8D8CF362359"
+  },
+  {
+    "username": "tst",
+    "password": "tst",
+    "isAdmin": true,
+    "about": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cum, fuga accusamus! A, repellendus, doloribus excepturi accusamus rem odit delectus consectetur minus distinctio voluptatibus pariatur veniam eligendi culpa esse nihil quis.",
+    "img": "https://api.adorable.io/avatars/285/tst.png",
+    "createdAt": 1574952586961,
+    "_id": "185A16EB7B5248E197E"
+  },
+  {
+    "username": "Aviv",
+    "password": "12345",
+    "_id": "12345",
+    "isAdmin": true,
+    "about": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cum, fuga accusamus! A, repellendus, doloribus excepturi accusamus rem odit delectus consectetur minus distinctio voluptatibus pariatur veniam eligendi culpa esse nihil quis.",
+    "img": "https://api.adorable.io/avatars/285/aviv.png",
+    "createdAt": 1574952586961
+  },
+  {
+    "username": "Paz",
+    "password": "123",
+    "_id": "123",
+    "isAdmin": false,
+    "img": "https://api.adorable.io/avatars/285/paz.png",
+    "createdAt": 1574952586961
+  },
+  {
+    "username": "Itai",
+    "password": "1234",
+    "_id": "1234",
+    "isAdmin": false,
+    "img": "https://api.adorable.io/avatars/285/itai.png",
+    "createdAt": 1574952586961
+  }
+]

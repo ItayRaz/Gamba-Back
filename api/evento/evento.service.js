@@ -67,7 +67,7 @@ function getEventosToSend(eventos, filterBy = {}) {
     var eventosToSend = [...eventos];
     
     if (filterBy.searchStr) eventosToSend = eventosToSend.filter(evento => evento.name.toLowerCase().includes(filterBy.searchStr.toLowerCase()));
-    if (filterBy.creatorId) eventosToSend = eventosToSend.filter(evento => evento.creatorId === filterBy.creatorId);
+    if (filterBy.creatorId) eventosToSend = eventosToSend.filter(evento => evento.creator._id === filterBy.creatorId);
     if (filterBy.memberId) eventosToSend = eventosToSend.filter(evento => evento.members.find(member => member._id === filterBy.memberId));
 
     return eventosToSend;

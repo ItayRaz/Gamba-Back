@@ -28,142 +28,29 @@
   ],
   "eventos": [
     {
-      "_id": 1223,
-      "title": "House party",
+      "title": "Beer Festival",
       "location": {
         "Coords": {
-          "lat": 34.72218,
-          "lng": 32.097768
+          "lat": 0,
+          "lng": 0
         },
-        "name": "Tel aviv port"
+        "name": ""
       },
-      "desc": "The main goal of this group is growing the Israeli Startups ecosystem and helping the early stage entrepreuners in building their venutres. TLV Startup Hub is an open non-profit independent group, which is not associated with any company or organization.Come and meet the Israeli entrepreneurs, technology gurus, investors and advisers who share their vision, technologies and business experience. Get an advice on your 'next-big-idea' and help others to develop their venture. Network, learn and mentor helping Israeli high-tech industry growth.",
+      "desc": "fd;kjgvhasdlfkh asdfkljkbSD FLKJABFS.dkvhbS.KDVJASDVHSD.FKJSDHF .SDFJCBASD.CJSDBFC.Kjdsc",
       "imgs": [
-        "https://secure.meetupstatic.com/photos/event/9/9/7/4/600_486939284.jpeg",
-        "https://secure.meetupstatic.com/photos/event/9/9/6/d/600_486939277.jpeg",
-        "https://secure.meetupstatic.com/photos/event/9/9/6/0/600_486939264.jpeg",
-        "https://secure.meetupstatic.com/photos/event/9/9/7/0/600_486939280.jpeg"
+        "http://res.cloudinary.com/dfsjcqagx/image/upload/v1575182861/sjr0ei33yjpj5wmxmuet.jpg",
+        "http://res.cloudinary.com/dfsjcqagx/image/upload/v1575182862/aobmbeqvto7bf5mbizq2.jpg"
       ],
-      "creator": {
-        "_id": "dkjhkjhdkd",
-        "name": "Rakefet toviki",
-        "img": "https://imgix.bustle.com/elite-daily/2015/09/06042857/elitedaily-guille-faingold-woman.jpg?w=1020&h=574&fit=crop&crop=faces&auto=format&q=70&dpr=2"
-      },
-      "createdAt": "Date.now()",
+      "creator": {},
+      "createdAt": 1575182825480,
+      "price": 4,
+      "members": [],
       "time": {
-        "start": 1512345123456,
-        "end": ""
+        "start": 1575410400000,
+        "duration": 4
       },
-      "price": 80,
-      "members": [
-        {
-          "name": "Avi zagori",
-          "img": "https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500",
-          "_id":"ljdlkjfldfj"
-        },
-        {
-          "name":"Noni benito",
-          "img": "https://images.pexels.com/photos/736716/pexels-photo-736716.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500",
-          "_id":"jdhkssjhd"
-        },
-        {
-          "name":"Saoni erto",
-          "img": "https://images.pexels.com/photos/1222271/pexels-photo-1222271.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500",
-          "_id":"jiuydsidjhd"
-        }
-      ]
-    },
-    {
-      "_id": 1223,
-      "title": "House party",
-      "location": {
-        "Coords": {
-          "lat": 34.72218,
-          "lng": 32.097768
-        },
-        "name": "Tel aviv port"
-      },
-      "desc": "The main goal of this group is growing the Israeli Startups ecosystem and helping the early stage entrepreuners in building their venutres. TLV Startup Hub is an open non-profit independent group, which is not associated with any company or organization.Come and meet the Israeli entrepreneurs, technology gurus, investors and advisers who share their vision, technologies and business experience. Get an advice on your 'next-big-idea' and help others to develop their venture. Network, learn and mentor helping Israeli high-tech industry growth.",
-      "imgs": [
-        "https://secure.meetupstatic.com/photos/event/9/9/7/4/600_486939284.jpeg",
-        "https://secure.meetupstatic.com/photos/event/9/9/6/d/600_486939277.jpeg",
-        "https://secure.meetupstatic.com/photos/event/9/9/6/0/600_486939264.jpeg",
-        "https://secure.meetupstatic.com/photos/event/9/9/7/0/600_486939280.jpeg"
-      ],
-      "creator": {
-        "_id": "12345",
-        "name": "Rakefet toviki",
-        "img": "https://imgix.bustle.com/elite-daily/2015/09/06042857/elitedaily-guille-faingold-woman.jpg?w=1020&h=574&fit=crop&crop=faces&auto=format&q=70&dpr=2"
-      },
-      "createdAt": "Date.now()",
-      "time": {
-        "start": 1574978400000,
-        "end": ""
-      },
-      "price": 80,
-      "members": [
-        {
-          "name": "Avi zagori",
-          "img": "https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500",
-          "_id":"ljdlkjfldfj"
-        },
-        {
-          "name":"Noni benito",
-          "img": "https://images.pexels.com/photos/736716/pexels-photo-736716.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500",
-          "_id":"jdhkssjhd"
-        },
-        {
-          "name":"Saoni erto",
-          "img": "https://images.pexels.com/photos/1222271/pexels-photo-1222271.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500",
-          "_id":"jiuydsidjhd"
-        }
-      ]
-    },
-    {
-      "_id": 1223,
-      "title": "House party",
-      "location": {
-        "Coords": {
-          "lat": 34.72218,
-          "lng": 32.097768
-        },
-        "name": "Tel aviv port"
-      },
-      "desc": "The main goal of this group is growing the Israeli Startups ecosystem and helping the early stage entrepreuners in building their venutres. TLV Startup Hub is an open non-profit independent group, which is not associated with any company or organization.Come and meet the Israeli entrepreneurs, technology gurus, investors and advisers who share their vision, technologies and business experience. Get an advice on your 'next-big-idea' and help others to develop their venture. Network, learn and mentor helping Israeli high-tech industry growth.",
-      "imgs": [
-        "https://secure.meetupstatic.com/photos/event/9/9/7/4/600_486939284.jpeg",
-        "https://secure.meetupstatic.com/photos/event/9/9/6/d/600_486939277.jpeg",
-        "https://secure.meetupstatic.com/photos/event/9/9/6/0/600_486939264.jpeg",
-        "https://secure.meetupstatic.com/photos/event/9/9/7/0/600_486939280.jpeg"
-      ],
-      "creator": {
-        "_id": "12345",
-        "name": "Rakefet toviki",
-        "img": "https://imgix.bustle.com/elite-daily/2015/09/06042857/elitedaily-guille-faingold-woman.jpg?w=1020&h=574&fit=crop&crop=faces&auto=format&q=70&dpr=2"
-      },
-      "createdAt": "Date.now()",
-      "time": {
-        "start": 1574978400000,
-        "end": ""
-      },
-      "price": 80,
-      "members": [
-        {
-          "name": "Aviv",
-          "img": "https://api.adorable.io/avatars/285/aviv.png",
-          "_id":"12345"
-        },
-        {
-          "name":"Noni benito",
-          "img": "https://images.pexels.com/photos/736716/pexels-photo-736716.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500",
-          "_id":"jdhkssjhd"
-        },
-        {
-          "name":"Saoni erto",
-          "img": "https://images.pexels.com/photos/1222271/pexels-photo-1222271.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500",
-          "_id":"jiuydsidjhd"
-        }
-      ]
+      "categories": [],
+      "_id": 1
     }
   ]
 }

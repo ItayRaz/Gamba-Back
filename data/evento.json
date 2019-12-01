@@ -1,5 +1,174 @@
 [
   {
+    "title": "ewrew",
+    "location": {
+      "address_line_1": "tel aviv",
+      "coords": {
+        "lat": 32.0852999,
+        "lng": 34.78176759999999
+      }
+    },
+    "desc": "dsadsada",
+    "imgs": [],
+    "creator": {},
+    "createdAt": 1575194645403,
+    "price": 3,
+    "members": [],
+    "time": {
+      "start": 1575194645403,
+      "duration": 2
+    },
+    "categories": [],
+    "creatorId": "guest",
+    "_id": "111716EC0EB2225249E"
+  },
+  {
+    "title": ";KNSKSNKDN ",
+    "location": {
+      "address_line_1": "RAMAT GAN",
+      "coords": {
+        "lat": 32.068424,
+        "lng": 34.824785
+      }
+    },
+    "desc": "SLMSLMSMB",
+    "imgs": [],
+    "creator": {},
+    "createdAt": 1575194456075,
+    "price": 3,
+    "members": [],
+    "time": {
+      "start": 1575194456075,
+      "duration": 3
+    },
+    "categories": [],
+    "creatorId": "guest",
+    "_id": "7CC16EC0E82D83558"
+  },
+  {
+    "title": "a.dkhsdk.sdv",
+    "location": {
+      "address_line_1": "kjj;;ljll;",
+      "coords": {
+        "lat": 43.653226,
+        "lng": -79.3831843
+      }
+    },
+    "desc": ";kljhgf",
+    "imgs": [],
+    "creator": {},
+    "createdAt": 1575193895050,
+    "price": 3,
+    "members": [],
+    "time": {
+      "start": 1575193895050,
+      "duration": 4
+    },
+    "categories": [],
+    "creatorId": "guest",
+    "_id": "3E916EC0DF92791917"
+  },
+  {
+    "title": ";lkjhg",
+    "location": {
+      "address_line_1": ";lkm",
+      "coords": {
+        "lat": 40.5446914,
+        "lng": -88.99343809999999
+      }
+    },
+    "desc": "",
+    "imgs": [],
+    "creator": {},
+    "createdAt": 1575193412151,
+    "price": 0,
+    "members": [],
+    "time": {
+      "start": 1576101600000,
+      "duration": 4
+    },
+    "categories": [],
+    "creatorId": "guest",
+    "_id": "217F16EC0D82F97100B"
+  },
+  {
+    "title": ";lkjh",
+    "location": {
+      "Coords": {
+        "lat": 0,
+        "lng": 0
+      },
+      "name": ""
+    },
+    "desc": "'k'k'l",
+    "imgs": [],
+    "creator": {},
+    "createdAt": 1575187397120,
+    "price": 2,
+    "members": [
+      {
+        "_id": "12345",
+        "name": "Aviv"
+      }
+    ],
+    "time": {
+      "start": 1575187397122,
+      "duration": 3
+    },
+    "categories": [],
+    "creatorId": "guest",
+    "_id": "1FCA16EC07C60182494"
+  },
+  {
+    "title": "tstststst",
+    "location": {
+      "Coords": {
+        "lat": 0,
+        "lng": 0
+      },
+      "name": ""
+    },
+    "desc": "",
+    "imgs": [],
+    "creator": {
+      "_id": "12345",
+      "name": "Aviv"
+    },
+    "createdAt": 1575187085808,
+    "price": 0,
+    "members": [],
+    "time": {
+      "start": 1575187085809,
+      "duration": 0
+    },
+    "categories": [],
+    "creatorId": "guest",
+    "_id": "D0B16EC077952E1500"
+  },
+  {
+    "title": "tst",
+    "location": {
+      "Coords": {
+        "lat": 0,
+        "lng": 0
+      },
+      "name": ""
+    },
+    "desc": "",
+    "imgs": [],
+    "creator": {},
+    "createdAt": 1575186955370,
+    "price": 0,
+    "members": [],
+    "time": {
+      "start": 1575186955370,
+      "duration": 0
+    },
+    "categories": [],
+    "creatorId": "guest",
+    "_id": "1C1D16EC075903BB58"
+  },
+  {
     "title": "Beer Festival",
     "location": {
       "Coords": {

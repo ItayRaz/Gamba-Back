@@ -13,7 +13,6 @@ module.exports = {
 function query(req, res) {
     reviewService.query(req.query)
         .then(reviews => {
-            console.log('server getting reviews:', reviews)
             res.json(reviews)})
         .catch(err => res.status(500).send(err));
 }
@@ -27,7 +26,7 @@ function getById(req, res) {
 
 function add(req, res) {
     var review = req.body;
-    var user = req.session.logedUser;
+    var user = req.session.loggedUser;
     review.reviewerId = (user)? user._id : 'guest';
     reviewService.save(review)
         .then(review => res.json(review))

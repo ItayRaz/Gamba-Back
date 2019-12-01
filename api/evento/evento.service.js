@@ -38,7 +38,6 @@ function save(evento) {
             }
             _saveEventosToFile(eventos);
             return Promise.resolve(evento);
-
         })
 }
 
@@ -76,9 +75,10 @@ function getEventosToSend(eventos, filterBy = {}) {
 function _createEventos() {
     return _loadEventosFromFile()
         .then(eventos => {
-            if (!eventos || eventos.length === 0) eventos = _someEventos;
-            // gEventos = eventos;
-            _saveEventosToFile(eventos)
+            if (!eventos || eventos.length === 0) {
+                eventos = _someEventos
+                _saveEventosToFile(eventos)
+            };
             return eventos;
         })
 }

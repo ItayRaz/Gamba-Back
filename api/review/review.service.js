@@ -72,8 +72,10 @@ function getReviewsToSend(reviews, filterBy = {}) {
 function _createReviews() {
     return _loadReviewsFromFile()
         .then(reviews => {
-            if (!reviews || reviews.length === 0) reviews = _someReviews;
-            _saveReviewsToFile(reviews)
+            if (!reviews || reviews.length === 0) {
+                reviews = _someReviews;
+                _saveReviewsToFile(reviews);
+            };
             return reviews;
         })
 }
@@ -87,4 +89,16 @@ function _loadReviewsFromFile() {
 }
 
 var _someReviews = [
+    {
+        txt: 'some review',
+        _id: '12345',
+        reviewerId: '12345',
+        aboutId: '123'
+    },
+    {
+      txt: 'another review',
+      _id: '123456',
+      reviewerId: '123',
+      aboutId: '12345'
+    }
 ] 

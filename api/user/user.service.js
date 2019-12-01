@@ -75,7 +75,6 @@ function query(filterBy = {}) {
 
 function getUsersToSend(users, filterBy = {}) {
     var usersToSend = [...users];
-    console.log('filtering:', filterBy);
     if (filterBy.searchStr) usersToSend = usersToSend.filter(user => user.name.toLowerCase().includes(filterBy.searchStr.toLowerCase()));
     return usersToSend;
 }
@@ -83,12 +82,14 @@ function getUsersToSend(users, filterBy = {}) {
 function _createUsers() {
     return _loadUsersFromFile()
         .then(users => {
-            if (!users || users.length === 0) users = _someUsers;
-            // gUsers = users;
-            _saveUsersToFile(users)
+            if (!users || users.length === 0) {
+                users = _someUsers;
+                _saveUsersToFile(users)
+            };
             return users;
         })
 }
+
 function _saveUsersToFile(users) {
     fs.writeFileSync('data/user.json', JSON.stringify(users, null, 2));
 }

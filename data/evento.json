@@ -1,7 +1,37 @@
 [
   {
-    "_id": "5de4e30ebcf931733c022689",
-    "title": "Rhythm Of The night",
+    "title": "Party At Aviv's",
+    "location": {
+      "address_line_1": "jerusalem",
+      "coords": {
+        "lat": 31.768319,
+        "lng": 35.21371
+      }
+    },
+    "desc": "This is the first event everrrr! frfrffrfrfr",
+    "imgs": [
+      "http://res.cloudinary.com/dfsjcqagx/image/upload/v1575276574/aw5vswmdwv9v7wzghw1d.jpg",
+      "http://res.cloudinary.com/dfsjcqagx/image/upload/v1575276575/urmh7ou9qumvocasdb2p.jpg"
+    ],
+    "creator": {
+      "_id": "guest"
+    },
+    "createdAt": 1575276475057,
+    "price": 9999,
+    "members": [],
+    "time": {
+      "start": 1575583200000,
+      "duration": 5
+    },
+    "categories": [
+      "Night Life",
+      "party",
+      "Food"
+    ],
+    "_id": "10E816EC5CD0867FBF"
+  },
+  {
+    "title": "'l,'l,';,",
     "location": {
       "address_line_1": "Tel Aviv",
       "coords": {

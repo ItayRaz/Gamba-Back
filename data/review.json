@@ -3,7 +3,6 @@
     "txt": "bhvjhv",
     "createdAt": 1574630570923,
     "aboutId": "12345",
-    "reviewerId": "",
     "reviewer": {
       "_id": "guest"
     },
@@ -13,7 +12,6 @@
     "txt": "mgvvnbmb\n",
     "createdAt": 1574630570923,
     "aboutId": "12345",
-    "reviewerId": "",
     "reviewer": {
       "_id": "guest"
     },
@@ -23,7 +21,6 @@
     "txt": "new ne wn enw new ne wne nw en wne wn enw ne wne w",
     "createdAt": 1574630570923,
     "aboutId": "12345",
-    "reviewerId": "",
     "reviewer": {
       "_id": "guest"
     },
@@ -33,7 +30,6 @@
     "txt": "something new!!!!",
     "createdAt": 1574630570923,
     "aboutId": "12345",
-    "reviewerId": "",
     "reviewer": {
       "_id": "guest"
     },
@@ -43,7 +39,6 @@
     "txt": "!!!!!!!",
     "createdAt": 1574630570923,
     "aboutId": "123",
-    "reviewerId": "",
     "reviewer": {
       "_id": "guest"
     },
@@ -53,7 +48,6 @@
     "txt": "!1",
     "createdAt": 1574630570923,
     "aboutId": "12345",
-    "reviewerId": "",
     "reviewer": {
       "_id": "guest"
     },
@@ -63,7 +57,6 @@
     "txt": "!!!!",
     "createdAt": 1574630570923,
     "aboutId": "123",
-    "reviewerId": "",
     "reviewer": {
       "_id": "guest"
     },
@@ -73,7 +66,6 @@
     "txt": "!!!",
     "createdAt": 1574630570923,
     "aboutId": "12345",
-    "reviewerId": "",
     "reviewer": {
       "_id": "guest"
     },
@@ -83,7 +75,6 @@
     "txt": "!!!!",
     "createdAt": 1574630570923,
     "aboutId": "12345",
-    "reviewerId": "",
     "reviewer": {
       "_id": "guest"
     },
@@ -93,7 +84,6 @@
     "txt": "something bad!!!",
     "createdAt": 1574630570923,
     "aboutId": "1F3216EC5B06048118F",
-    "reviewerId": "",
     "reviewer": {
       "_id": "guest"
     },
@@ -103,7 +93,6 @@
     "txt": "!!",
     "createdAt": 1574630570923,
     "aboutId": "1F3216EC5B06048118F",
-    "reviewerId": "",
     "reviewer": {
       "_id": "guest"
     },
@@ -113,17 +102,33 @@
     "txt": "!",
     "createdAt": 1574630570923,
     "aboutId": "1F3216EC5B06048118F",
-    "reviewerId": "",
     "reviewer": {
       "_id": "guest"
     },
     "_id": "224516EC60856671E74"
   },
   {
-    "txt": ",kmjhgfds\n",
+    "txt": "se;kks;kn",
+    "createdAt": 1574630570923,
+    "aboutId": "12345",
+    "_id": "94316EC220B103AAD"
+  },
+  {
+    "txt": "",
+    "createdAt": 1574630570923,
+    "aboutId": "12345",
+    "_id": "199C16EC220A00617F3"
+  },
+  {
+    "txt": "something bad!\n",
+    "createdAt": 1574630570923,
+    "aboutId": "12345",
+    "_id": "19E216EC2208F7D1986"
+  },
+  {
+    "txt": "something about him",
     "createdAt": 1574630570923,
     "aboutId": "1F3216EC5B06048118F",
-    "reviewerId": "",
     "reviewer": {
       "_id": "guest"
     },
@@ -133,7 +138,6 @@
     "txt": "something something",
     "createdAt": 1574630570923,
     "aboutId": "123",
-    "reviewerId": "",
     "reviewer": {
       "_id": "guest"
     },
@@ -143,7 +147,6 @@
     "txt": "something?",
     "createdAt": 1574630570923,
     "aboutId": "123",
-    "reviewerId": "",
     "reviewer": {
       "_id": "guest"
     },
@@ -153,7 +156,6 @@
     "txt": "somethimg something",
     "createdAt": 1574630570923,
     "aboutId": "12345",
-    "reviewerId": "",
     "reviewer": {
       "_id": "guest"
     },
@@ -163,7 +165,6 @@
     "txt": "!!",
     "createdAt": 1574630570923,
     "aboutId": "12345",
-    "reviewerId": "",
     "reviewer": {
       "_id": "guest"
     },
@@ -173,7 +174,6 @@
     "txt": "something else",
     "createdAt": 1574630570923,
     "aboutId": "12345",
-    "reviewerId": "",
     "reviewer": {
       "_id": "guest"
     },
@@ -183,7 +183,6 @@
     "txt": "something good!",
     "createdAt": 1574630570923,
     "aboutId": "12345",
-    "reviewerId": "",
     "reviewer": {
       "_id": "guest"
     },
@@ -193,7 +192,6 @@
     "txt": "!!!!",
     "createdAt": 1574630570923,
     "aboutId": "12345",
-    "reviewerId": "",
     "reviewer": {
       "_id": "guest"
     },
@@ -203,7 +201,6 @@
     "txt": "another real bad review",
     "createdAt": 1574630570923,
     "aboutId": "12345",
-    "reviewerId": "",
     "reviewer": {
       "_id": "guest"
     },
@@ -213,7 +210,6 @@
     "txt": "some baaaadadd review about me",
     "createdAt": 1574630570923,
     "aboutId": "12345",
-    "reviewerId": "",
     "reviewer": {
       "_id": "guest"
     },
@@ -223,7 +219,6 @@
     "txt": "sometkrmkpsfmb",
     "createdAt": 1574630570923,
     "aboutId": "12345",
-    "reviewerId": "",
     "reviewer": {
       "_id": "guest"
     },
@@ -233,7 +228,6 @@
     "txt": "something bad!",
     "createdAt": 1574630570923,
     "aboutId": "12345",
-    "reviewerId": "",
     "reviewer": {
       "_id": "guest"
     },

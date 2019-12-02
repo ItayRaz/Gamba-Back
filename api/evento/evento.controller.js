@@ -26,8 +26,9 @@ function getById(req, res) {
 
 function add(req, res) {
     var evento = req.body;
-    var user = req.session.logedUser;
-    evento.creatorId = (user)? user._id : 'guest';
+    var user = req.session.loggedUser;
+    console.log('adding evento,', req.session);
+    evento.creator = (user)? {_id: user._id, name: user.username, img: user.img} : {_id: 'guest'};
     eventoService.save(evento)
         .then(evento => res.json(evento))
         .catch(err => res.status(500).send(err));

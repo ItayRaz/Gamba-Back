@@ -1,32 +1,34 @@
-// 'use strict';
+'use strict';
 
-// const MongoClient = require('mongodb').MongoClient;
+const MongoClient = require('mongodb').MongoClient;
 
-// const dbURL  =  'mongodb://localhost:27017'
+const dbURL  =  'mongodb://localhost:27017'
 
-// module.exports = {
-//     getCollection
-// }
+module.exports = {
+    getCollection
+}
 
-// // Database Name
-// const dbName = 'evento';
+// Database Name
+const dbName = 'gamba';
 
-// var dbConn = null;
+var dbConn = null;
 
-// async function getCollection(collectionName) {
-//     const db = await connect()
-//     return db.collection(collectionName);
-// }
+async function getCollection(collectionName) {
+    console.log('shalom');
+    
+    const db = await connect()
+    return db.collection(collectionName);
+}
 
-// async function connect() {
-//     if (dbConn) return dbConn;
-//     try {
-//         const client = await MongoClient.connect(dbURL, {useNewUrlParser: true});
-//         const db = client.db(dbName);
-//         dbConn = db;
-//         return db;
-//     } catch(err) {
-//         console.log('Cannot Connect to DB', err)
-//         throw err;
-//     }
-// }
+async function connect() {
+    if (dbConn) return dbConn;
+    try {
+        const client = await MongoClient.connect(dbURL, {useNewUrlParser: true});
+        const db = client.db(dbName);
+        dbConn = db;
+        return db;
+    } catch(err) {
+        console.log('Cannot Connect to DB', err)
+        throw err;
+    }
+}

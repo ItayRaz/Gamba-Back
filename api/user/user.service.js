@@ -43,12 +43,14 @@ function save(user) {
                     users.splice(idx, 1, user);
                 }
             } else {
+                if (users.find(currUser => currUser.username === user.username)) {
+                    return Promise.reject('this user name is taken');
+                }
                 user._id = utils.getRandomId();
                 users.unshift(user);
             }
             _saveUsersToFile(users);
             return Promise.resolve(user);
-
         })
 }
 

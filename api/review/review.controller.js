@@ -27,7 +27,7 @@ function getById(req, res) {
 function add(req, res) {
     var review = req.body;
     var user = req.session.loggedUser;
-    review.reviewerId = (user)? user._id : 'guest';
+    review.reviewer = (user)? {_id: user._id, name: user.username, img: user.img} : {_id: 'guest'};
     reviewService.save(review)
         .then(review => res.json(review))
         .catch(err => res.status(500).send(err));

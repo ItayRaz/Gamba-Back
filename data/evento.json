@@ -1,5 +1,33 @@
 [
   {
+    "title": "n;knsd",
+    "location": {
+      "address_line_1": "הבונים 4",
+      "coords": {
+        "lat": 32.2808424,
+        "lng": 34.8602817
+      }
+    },
+    "desc": "FGKJFDHGLKAD FGLAKDSJ GLADSHJHFV LSDFH SLADKJFD ASLFKJ HADS",
+    "imgs": [
+      "http://res.cloudinary.com/dfsjcqagx/image/upload/v1575201006/li36bnwqjbrhxznigp00.jpg"
+    ],
+    "creator": {},
+    "createdAt": 1575200936500,
+    "price": 3,
+    "members": [],
+    "time": {
+      "start": 1576533600000,
+      "duration": 3
+    },
+    "categories": [
+      "Night Life",
+      "mjbas"
+    ],
+    "creatorId": "guest",
+    "_id": "A4E16EC14C117B1FCB"
+  },
+  {
     "title": "popo",
     "location": {
       "address_line_1": "tel aviv",
@@ -108,7 +136,53 @@
     "creator": {},
     "createdAt": 1575190109329,
     "price": 1000,
-    "members": [],
+    "members": [
+      {
+        "username": "Aviv",
+        "password": "12345",
+        "_id": "12345",
+        "isAdmin": true,
+        "about": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cum, fuga accusamus! A, repellendus, doloribus excepturi accusamus rem odit delectus consectetur minus distinctio voluptatibus pariatur veniam eligendi culpa esse nihil quis.",
+        "img": "https://api.adorable.io/avatars/285/aviv.png",
+        "createdAt": 1574952586961
+      },
+      {
+        "username": "Aviv",
+        "password": "12345",
+        "_id": "12345",
+        "isAdmin": true,
+        "about": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cum, fuga accusamus! A, repellendus, doloribus excepturi accusamus rem odit delectus consectetur minus distinctio voluptatibus pariatur veniam eligendi culpa esse nihil quis.",
+        "img": "https://api.adorable.io/avatars/285/aviv.png",
+        "createdAt": 1574952586961
+      },
+      {
+        "username": "Aviv",
+        "password": "12345",
+        "_id": "12345",
+        "isAdmin": true,
+        "about": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cum, fuga accusamus! A, repellendus, doloribus excepturi accusamus rem odit delectus consectetur minus distinctio voluptatibus pariatur veniam eligendi culpa esse nihil quis.",
+        "img": "https://api.adorable.io/avatars/285/aviv.png",
+        "createdAt": 1574952586961
+      },
+      {
+        "username": "Aviv",
+        "password": "12345",
+        "_id": "12345",
+        "isAdmin": true,
+        "about": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cum, fuga accusamus! A, repellendus, doloribus excepturi accusamus rem odit delectus consectetur minus distinctio voluptatibus pariatur veniam eligendi culpa esse nihil quis.",
+        "img": "https://api.adorable.io/avatars/285/aviv.png",
+        "createdAt": 1574952586961
+      },
+      {
+        "username": "Aviv",
+        "password": "12345",
+        "_id": "12345",
+        "isAdmin": true,
+        "about": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cum, fuga accusamus! A, repellendus, doloribus excepturi accusamus rem odit delectus consectetur minus distinctio voluptatibus pariatur veniam eligendi culpa esse nihil quis.",
+        "img": "https://api.adorable.io/avatars/285/aviv.png",
+        "createdAt": 1574952586961
+      }
+    ],
     "time": {
       "start": 1575190109329,
       "duration": 4
@@ -143,7 +217,7 @@
   {
     "title": "jjjj",
     "location": {
-      "Coords": {
+      "coords": {
         "lat": 0,
         "lng": 0
       },
@@ -166,7 +240,7 @@
   {
     "title": "xzcZXVZ",
     "location": {
-      "Coords": {
+      "coords": {
         "lat": 0,
         "lng": 0
       },
@@ -189,7 +263,7 @@
   {
     "title": "aaaaa",
     "location": {
-      "Coords": {
+      "coords": {
         "lat": 0,
         "lng": 0
       },
@@ -212,7 +286,7 @@
   {
     "title": "dsfsdfasd",
     "location": {
-      "Coords": {
+      "coords": {
         "lat": 0,
         "lng": 0
       },
@@ -235,7 +309,7 @@
   {
     "title": "kfufvhvskjsdfvhsdf",
     "location": {
-      "Coords": {
+      "coords": {
         "lat": 0,
         "lng": 0
       },
@@ -260,7 +334,7 @@
   {
     "title": "dddddd",
     "location": {
-      "Coords": {
+      "coords": {
         "lat": 0,
         "lng": 0
       },
@@ -285,7 +359,7 @@
   {
     "title": "dsfasdf",
     "location": {
-      "Coords": {
+      "coords": {
         "lat": 0,
         "lng": 0
       },
@@ -310,7 +384,7 @@
   {
     "title": "Beer Festival",
     "location": {
-      "Coords": {
+      "coords": {
         "lat": 0,
         "lng": 0
       },

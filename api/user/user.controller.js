@@ -55,6 +55,7 @@ function login(req, res) {
     userService.login({username, password})
         .then(user => {
             req.session.loggedUser = user;
+            console.log('session id', req.session.id)
             console.log('logged in,', req.session)
             res.json(user);
         })

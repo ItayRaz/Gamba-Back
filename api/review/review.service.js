@@ -1,8 +1,8 @@
 'use strict';
 
-const fs = require('fs');
+const dbService = require('../../services/db.service.js');
+const ObjectId = require('mongodb').ObjectId;
 
-const utils = require('../../services/util.service.js');
 
 module.exports = {
     query,
@@ -11,102 +11,93 @@ module.exports = {
     save,
 }
 
-function get(_id) {
-    return _createReviews()
-        .then(reviews => {
-            var review = reviews.find(review => review._id === _id);
-            if (review) return Promise.resolve(review);
-            else return Promise.reject('something went wrong');
-        })
+async function get(_id) {
+    const collection = await _connectToCollection();
+    try {
+        var review = collection.findOne({"_id":ObjectId(_id)});
+        return review;
+    } catch(err) {
+        throw err
+    }
 }
 
-function save(review) {
-    return _createReviews()
-        .then(reviews => {
-            if (review._id) {
-                var idx = reviews.findIndex(currReview => currReview._id === review._id);
-                if (idx !== -1) {
-                    reviews.splice(idx, 1, review);
-                }
-            } else {
-                review._id = utils.getRandomId();
-                reviews.unshift(review);
-            }
-            _saveReviewsToFile(reviews);
-            return Promise.resolve(review);
+async function save(review) {
+    const collection = await _connectToCollection();
 
-        })
+    if (review._id) {
+        try {
+            review._d = ObjectId(review._id);
+            await collection.updateOne({"_id":ObjectId(review._id)}, {$set: review});
+        } catch(err) {
+            throw err;
+        }
+    } else {
+        try {
+            await collection.insertOne(review);
+            return review;
+        } catch(err) {
+            throw err;
+        }
+    }
 }
 
-function remove(_id) {
-    return _createReviews()
-        .then(reviews => {
-            var idx = reviews.findIndex(review => review._id === _id);
-            if (idx !== -1) {
-                reviews.splice(idx, 1);
-                _saveReviewsToFile(reviews);
-                return Promise.resolve(_id);
-            }
-            else return Promise.reject('review not found, could not delete');
-        })
+async function remove(_id) {
+    const collection = await _connectToCollection();
+    try {
+        return await collection.deleteOne({"_id":ObjectId(_id)});
+    } catch(err) {
+        throw err;
+    }
 }
 
-function query(filterBy = {}) {
-    return _createReviews()
-        .then(reviews => {
-            return getReviewsToSend(reviews, filterBy);
-        })
-        .catch(err => Promise.reject('could not get reviews'))
+async function query(filterBy = {}) {
+    const collection = await _connectToCollection();
+    try {
+        var reviews = await collection.find({}).toArray();
+        if (!reviews || !reviews.length) {
+            await collection.insert(_someReviews);
+            return collection.find({}).toArray();
+        }
+        return reviews;
+    } catch(err) {
+        throw err;
+    }
 }
 
-function getReviewsToSend(reviews, filterBy = {}) {
-    var reviewsToSend = [...reviews];
+// function getReviewsToSend(reviews, filterBy = {}) {
+//     var reviewsToSend = [...reviews];
 
-    if (filterBy.searchStr) reviewsToSend = reviewsToSend.filter(review => review.name.toLowerCase().includes(filterBy.searchStr.toLowerCase()));
-    if (filterBy.reviewerId) reviewsToSend = reviewsToSend.filter(review => review.reviewer._id === filterBy.reviewerId);
-    if (filterBy.aboutId) reviewsToSend = reviewsToSend.filter(review => review.aboutId === filterBy.aboutId);
+//     if (filterBy.searchStr) reviewsToSend = reviewsToSend.filter(review => review.name.toLowerCase().includes(filterBy.searchStr.toLowerCase()));
+//     if (filterBy.reviewerId) reviewsToSend = reviewsToSend.filter(review => review.reviewer._id === filterBy.reviewerId);
+//     if (filterBy.aboutId) reviewsToSend = reviewsToSend.filter(review => review.aboutId === filterBy.aboutId);
     
-    return reviewsToSend;
-}
+//     return reviewsToSend;
+// }
 
-function _createReviews() {
-    return _loadReviewsFromFile()
-        .then(reviews => {
-            if (!reviews || reviews.length === 0) {
-                reviews = _someReviews;
-                _saveReviewsToFile(reviews);
-            };
-            return reviews;
-        })
-}
 
-function _saveReviewsToFile(reviews) {
-    fs.writeFileSync('data/review.json', JSON.stringify(reviews, null, 2));
-}
-
-function _loadReviewsFromFile() {
-    return Promise.resolve(require('../../data/review.json'));
+async function _connectToCollection() {
+    return await dbService.getCollection('review');
 }
 
 var _someReviews = [
-    {
-        txt: 'some review',
-        _id: '123425',
-        reviewer: {
-            _id: '12345',
-            name: 'Aviv',
-            img: 'https://api.adorable.io/avatars/285/aviv.png'
-        },
-        aboutId: '123'
-    },
-    {
-      txt: 'another review',
-      _id: '123456',
-      reviewer: {
-          _id: '123',
-          name: 'Paz',
-          img: 'https://api.adorable.io/avatars/285/paz.png'
-        },
-      aboutId: '12345'
-    }
+    // {
+    //     txt: 'some review',
+    //     // _id: '123425',
+    //     reviewer: {
+    //         // _id: '12345',
+    //         name: 'Aviv',
+    //         img: 'https://api.adorable.io/avatars/285/aviv.png'
+    //     },
+    //     // aboutId: '123'
+    // },
+    // {
+    //   txt: 'another review',
+    // //   _id: '123456',
+    //   reviewer: {
+    //     //   _id: '123',
+    //       name: 'Paz',
+    //       img: 'https://api.adorable.io/avatars/285/paz.png'
+    //     },
+    // //   aboutId: '12345'
+    // }
 ] 

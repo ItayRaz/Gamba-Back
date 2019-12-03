@@ -54,8 +54,8 @@ function login(req, res) {
     
     userService.login({username, password})
         .then(user => {
-            req.session.logedUser = user;
-            console.log('loged in, session:', req.session)
+            req.session.loggedUser = user;
+            console.log('logged in,', req.session)
             res.json(user);
         })
         .catch(err => {
@@ -64,7 +64,8 @@ function login(req, res) {
 }
 
 function logout(req, res) {
-    console.log('loging out');
-    req.session.logedUser = null;
-    res.send('loged out');
+    var user = req.session.loggedUser;
+    console.log('logging out,', req.session);
+    req.session.loggedUser = null;
+    res.send('logged out');
 }

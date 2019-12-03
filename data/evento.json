@@ -1,5 +1,6 @@
 [
   {
+<<<<<<< HEAD
     "title": "",
     "location": {
       "address_line_1": "הבונים 4 רמת גן",
@@ -93,10 +94,310 @@
         "lng": 0
       },
       "name": ""
+=======
+    "title": "Party At Aviv's",
+    "location": {
+      "address_line_1": "jerusalem",
+      "coords": {
+        "lat": 31.768319,
+        "lng": 35.21371
+      }
+    },
+    "desc": "This is the first event everrrr! frfrffrfrfr",
+    "imgs": [
+      "http://res.cloudinary.com/dfsjcqagx/image/upload/v1575276574/aw5vswmdwv9v7wzghw1d.jpg",
+      "http://res.cloudinary.com/dfsjcqagx/image/upload/v1575276575/urmh7ou9qumvocasdb2p.jpg"
+    ],
+    "creator": {
+      "_id": "guest"
+    },
+    "createdAt": 1575276475057,
+    "price": 9999,
+    "members": [],
+    "time": {
+      "start": 1575583200000,
+      "duration": 5
+    },
+    "categories": [
+      "Night Life",
+      "party",
+      "Food"
+    ],
+    "_id": "10E816EC5CD0867FBF"
+  },
+  {
+    "title": "'l,'l,';,",
+    "location": {
+      "address_line_1": "רמת גן",
+      "coords": {
+        "lat": 32.068424,
+        "lng": 34.824785
+      }
+    },
+    "desc": ".ךגצגצהתך",
+    "imgs": [],
+    "creator": {
+      "_id": "guest"
+    },
+    "createdAt": 1575213371055,
+    "price": 1,
+    "members": [
+      {
+        "username": "Aviv",
+        "password": "12345",
+        "_id": "12345",
+        "isAdmin": true,
+        "about": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cum, fuga accusamus! A, repellendus, doloribus excepturi accusamus rem odit delectus consectetur minus distinctio voluptatibus pariatur veniam eligendi culpa esse nihil quis.",
+        "img": "https://api.adorable.io/avatars/285/aviv.png",
+        "createdAt": 1574952586961
+      },
+      {
+        "username": "Aviv",
+        "password": "12345",
+        "_id": "12345",
+        "isAdmin": true,
+        "about": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cum, fuga accusamus! A, repellendus, doloribus excepturi accusamus rem odit delectus consectetur minus distinctio voluptatibus pariatur veniam eligendi culpa esse nihil quis.",
+        "img": "https://api.adorable.io/avatars/285/aviv.png",
+        "createdAt": 1574952586961
+      },
+      {
+        "username": "Aviv",
+        "password": "12345",
+        "_id": "12345",
+        "isAdmin": true,
+        "about": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cum, fuga accusamus! A, repellendus, doloribus excepturi accusamus rem odit delectus consectetur minus distinctio voluptatibus pariatur veniam eligendi culpa esse nihil quis.",
+        "img": "https://api.adorable.io/avatars/285/aviv.png",
+        "createdAt": 1574952586961
+      },
+      {
+        "username": "Aviv",
+        "password": "12345",
+        "_id": "12345",
+        "isAdmin": true,
+        "about": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cum, fuga accusamus! A, repellendus, doloribus excepturi accusamus rem odit delectus consectetur minus distinctio voluptatibus pariatur veniam eligendi culpa esse nihil quis.",
+        "img": "https://api.adorable.io/avatars/285/aviv.png",
+        "createdAt": 1574952586961
+      }
+    ],
+    "time": {
+      "start": 1575213371055,
+      "duration": 2
+    },
+    "categories": [
+      "אלאלאלא"
+    ],
+    "_id": "B3A16EC209107A24FC"
+  },
+  {
+    "title": "something with categories",
+    "location": {
+      "address_line_1": "tel aviv port",
+      "coords": {
+        "lat": 32.0971424,
+        "lng": 34.7729517
+      }
+    },
+    "desc": "lkmnj",
+    "imgs": [],
+    "creator": {
+      "_id": "guest"
+    },
+    "createdAt": 1575213324316,
+    "price": 1,
+    "members": [],
+    "time": {
+      "start": 1575213324316,
+      "duration": 2
+    },
+    "categories": [
+      "Night Life"
+    ],
+    "_id": "E7216EC208508D53F"
+  },
+  {
+    "title": "הבונים3",
+    "location": {
+      "address_line_1": "הבונים 3 רמת גן",
+      "coords": {
+        "lat": 32.0877905,
+        "lng": 34.8027871
+      }
+    },
+    "desc": "ףךצ",
+    "imgs": [],
+    "creator": {
+      "_id": "guest"
+    },
+    "createdAt": 1575206793128,
+    "price": 1,
+    "members": [],
+    "time": {
+      "start": 1575206793128,
+      "duration": 1
+    },
+    "categories": [],
+    "_id": "82416EC1A4B2B116FC"
+  },
+  {
+    "title": "הבונים 4",
+    "location": {
+      "address_line_1": "הבונים 4 רמת גן",
+      "coords": {
+        "lat": 32.0879749,
+        "lng": 34.8030999
+      }
+    },
+    "desc": "ךלחיעכ",
+    "imgs": [],
+    "creator": {
+      "_id": "guest"
+    },
+    "createdAt": 1575206193785,
+    "price": 2,
+    "members": [
+      {
+        "username": "Aviv",
+        "password": "12345",
+        "_id": "12345",
+        "isAdmin": true,
+        "about": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cum, fuga accusamus! A, repellendus, doloribus excepturi accusamus rem odit delectus consectetur minus distinctio voluptatibus pariatur veniam eligendi culpa esse nihil quis.",
+        "img": "https://api.adorable.io/avatars/285/aviv.png",
+        "createdAt": 1574952586961
+      },
+      {
+        "username": "Aviv",
+        "password": "12345",
+        "_id": "12345",
+        "isAdmin": true,
+        "about": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cum, fuga accusamus! A, repellendus, doloribus excepturi accusamus rem odit delectus consectetur minus distinctio voluptatibus pariatur veniam eligendi culpa esse nihil quis.",
+        "img": "https://api.adorable.io/avatars/285/aviv.png",
+        "createdAt": 1574952586961
+      },
+      {
+        "name": "!"
+      },
+      {
+        "name": "kdvnzk"
+      }
+    ],
+    "time": {
+      "start": 1575206193785,
+      "duration": 3
+    },
+    "categories": [],
+    "_id": "1C8116EC19BA205144E"
+  },
+  {
+    "title": "lkjhgf",
+    "location": {
+      "address_line_1": "tel aviv",
+      "coords": {
+        "lat": 32.0852999,
+        "lng": 34.78176759999999
+      }
+    },
+    "desc": "ljjbjbj",
+    "imgs": [],
+    "creator": {
+      "_id": "guest"
+    },
+    "createdAt": 1575201478697,
+    "price": 3,
+    "members": [],
+    "time": {
+      "start": 1575201478697,
+      "duration": 1
+    },
+    "categories": [],
+    "_id": "B5B16EC15361C114EE"
+  },
+  {
+    "title": "ewrew",
+    "location": {
+      "address_line_1": "tel aviv",
+      "coords": {
+        "lat": 32.0852999,
+        "lng": 34.78176759999999
+      }
+    },
+    "desc": "dsadsada",
+    "imgs": [],
+    "creator": {},
+    "createdAt": 1575194645403,
+    "price": 3,
+    "members": [
+      {
+        "name": "!@"
+      }
+    ],
+    "time": {
+      "start": 1575194645403,
+      "duration": 2
+    },
+    "categories": [],
+    "creatorId": "guest",
+    "_id": "111716EC0EB2225249E"
+  },
+  {
+    "title": ";KNSKSNKDN ",
+    "location": {
+      "address_line_1": "RAMAT GAN",
+      "coords": {
+        "lat": 32.068424,
+        "lng": 34.824785
+      }
+    },
+    "desc": "SLMSLMSMB",
+    "imgs": [],
+    "creator": {},
+    "createdAt": 1575194456075,
+    "price": 3,
+    "members": [],
+    "time": {
+      "start": 1575194456075,
+      "duration": 3
+    },
+    "categories": [],
+    "creatorId": "guest",
+    "_id": "7CC16EC0E82D83558"
+  },
+  {
+    "title": "a.dkhsdk.sdv",
+    "location": {
+      "address_line_1": "kjj;;ljll;",
+      "coords": {
+        "lat": 43.653226,
+        "lng": -79.3831843
+      }
+    },
+    "desc": ";kljhgf",
+    "imgs": [],
+    "creator": {},
+    "createdAt": 1575193895050,
+    "price": 3,
+    "members": [],
+    "time": {
+      "start": 1575193895050,
+      "duration": 4
+    },
+    "categories": [],
+    "creatorId": "guest",
+    "_id": "3E916EC0DF92791917"
+  },
+  {
+    "title": ";lkjhg",
+    "location": {
+      "address_line_1": ";lkm",
+      "coords": {
+        "lat": 40.5446914,
+        "lng": -88.99343809999999
+      }
+>>>>>>> 8bf6ae0c75ebd29a9c9e6d717623a322f9570b5a
     },
     "desc": "",
     "imgs": [],
     "creator": {},
+<<<<<<< HEAD
     "createdAt": 1575186221522,
     "price": 0,
     "members": [],
@@ -112,11 +413,29 @@
     "title": "!!!!",
     "location": {
       "Coords": {
+=======
+    "createdAt": 1575193412151,
+    "price": 0,
+    "members": [],
+    "time": {
+      "start": 1576101600000,
+      "duration": 4
+    },
+    "categories": [],
+    "creatorId": "guest",
+    "_id": "217F16EC0D82F97100B"
+  },
+  {
+    "title": ";lkjh",
+    "location": {
+      "coords": {
+>>>>>>> 8bf6ae0c75ebd29a9c9e6d717623a322f9570b5a
         "lat": 0,
         "lng": 0
       },
       "name": ""
     },
+<<<<<<< HEAD
     "desc": "",
     "imgs": [],
     "creator": {},
@@ -129,22 +448,73 @@
     ],
     "time": {
       "start": 1575186152116,
-      "duration": 0
+=======
+    "desc": "'k'k'l",
+    "imgs": [],
+    "creator": {},
+    "createdAt": 1575187397120,
+    "price": 2,
+    "members": [
+      {
+        "_id": "12345",
+        "name": "Aviv"
+      }
+    ],
+    "time": {
+      "start": 1575187397122,
+      "duration": 3
     },
     "categories": [],
     "creatorId": "guest",
-    "_id": "F2E16EC06946C5160C"
+    "_id": "1FCA16EC07C60182494"
   },
   {
-    "title": "dhkjh",
+    "title": "tstststst",
     "location": {
-      "Coords": {
+      "coords": {
         "lat": 0,
         "lng": 0
       },
       "name": ""
     },
     "desc": "",
+    "imgs": [],
+    "creator": {
+      "_id": "12345",
+      "name": "Aviv"
+    },
+    "createdAt": 1575187085808,
+    "price": 0,
+    "members": [],
+    "time": {
+      "start": 1575187085809,
+>>>>>>> 8bf6ae0c75ebd29a9c9e6d717623a322f9570b5a
+      "duration": 0
+    },
+    "categories": [],
+    "creatorId": "guest",
+<<<<<<< HEAD
+    "_id": "F2E16EC06946C5160C"
+  },
+  {
+    "title": "dhkjh",
+    "location": {
+      "Coords": {
+=======
+    "_id": "D0B16EC077952E1500"
+  },
+  {
+    "title": "tst",
+    "location": {
+      "coords": {
+>>>>>>> 8bf6ae0c75ebd29a9c9e6d717623a322f9570b5a
+        "lat": 0,
+        "lng": 0
+      },
+      "name": ""
+    },
+    "desc": "",
+<<<<<<< HEAD
     "imgs": [
       "http://res.cloudinary.com/dfsjcqagx/image/upload/v1575185380/hieqoejgpjoa4zcjhbtn.jpg"
     ],
@@ -199,11 +569,25 @@
     "categories": [],
     "creatorId": "guest",
     "_id": "1E4916EC05D8834FD0"
+=======
+    "imgs": [],
+    "creator": {},
+    "createdAt": 1575186955370,
+    "price": 0,
+    "members": [],
+    "time": {
+      "start": 1575186955370,
+      "duration": 0
+    },
+    "categories": [],
+    "creatorId": "guest",
+    "_id": "1C1D16EC075903BB58"
+>>>>>>> 8bf6ae0c75ebd29a9c9e6d717623a322f9570b5a
   },
   {
     "title": "Beer Festival",
     "location": {
-      "Coords": {
+      "coords": {
         "lat": 0,
         "lng": 0
       },

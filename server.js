@@ -8,16 +8,16 @@ const cors = require('cors');
 
 const app = express();
 
-app.use(cors());
 app.use(express.static('public'));
-app.use(bodyParser.json());
 app.use(cookieParser());
+app.use(bodyParser.json());
 app.use(session({
     secret: 'some secret sheet',
     resave: false,
     saveUninitialized: true,
     cookie: {secure: false}
 }));
+app.use(cors());
 
 const eventoRout = require('./api/evento/evento.rout.js');
 const userRout = require('./api/user/user.rout.js');

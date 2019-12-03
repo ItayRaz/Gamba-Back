@@ -63,7 +63,7 @@ function getReviewsToSend(reviews, filterBy = {}) {
     var reviewsToSend = [...reviews];
 
     if (filterBy.searchStr) reviewsToSend = reviewsToSend.filter(review => review.name.toLowerCase().includes(filterBy.searchStr.toLowerCase()));
-    if (filterBy.reviewerId) reviewsToSend = reviewsToSend.filter(review => review.reviewerId === filterBy.reviewerId);
+    if (filterBy.reviewerId) reviewsToSend = reviewsToSend.filter(review => review.reviewer._id === filterBy.reviewerId);
     if (filterBy.aboutId) reviewsToSend = reviewsToSend.filter(review => review.aboutId === filterBy.aboutId);
     
     return reviewsToSend;
@@ -72,8 +72,10 @@ function getReviewsToSend(reviews, filterBy = {}) {
 function _createReviews() {
     return _loadReviewsFromFile()
         .then(reviews => {
-            if (!reviews || reviews.length === 0) reviews = _someReviews;
-            _saveReviewsToFile(reviews)
+            if (!reviews || reviews.length === 0) {
+                reviews = _someReviews;
+                _saveReviewsToFile(reviews);
+            };
             return reviews;
         })
 }
@@ -87,4 +89,24 @@ function _loadReviewsFromFile() {
 }
 
 var _someReviews = [
+    {
+        txt: 'some review',
+        _id: '123425',
+        reviewer: {
+            _id: '12345',
+            name: 'Aviv',
+            img: 'https://api.adorable.io/avatars/285/aviv.png'
+        },
+        aboutId: '123'
+    },
+    {
+      txt: 'another review',
+      _id: '123456',
+      reviewer: {
+          _id: '123',
+          name: 'Paz',
+          img: 'https://api.adorable.io/avatars/285/paz.png'
+        },
+      aboutId: '12345'
+    }
 ] 

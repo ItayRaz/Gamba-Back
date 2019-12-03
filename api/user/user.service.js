@@ -43,12 +43,14 @@ function save(user) {
                     users.splice(idx, 1, user);
                 }
             } else {
+                if (users.find(currUser => currUser.username === user.username)) {
+                    return Promise.reject('this user name is taken');
+                }
                 user._id = utils.getRandomId();
                 users.unshift(user);
             }
             _saveUsersToFile(users);
             return Promise.resolve(user);
-
         })
 }
 
@@ -75,7 +77,6 @@ function query(filterBy = {}) {
 
 function getUsersToSend(users, filterBy = {}) {
     var usersToSend = [...users];
-    console.log('filtering:', filterBy);
     if (filterBy.searchStr) usersToSend = usersToSend.filter(user => user.name.toLowerCase().includes(filterBy.searchStr.toLowerCase()));
     return usersToSend;
 }
@@ -83,12 +84,14 @@ function getUsersToSend(users, filterBy = {}) {
 function _createUsers() {
     return _loadUsersFromFile()
         .then(users => {
-            if (!users || users.length === 0) users = _someUsers;
-            // gUsers = users;
-            _saveUsersToFile(users)
+            if (!users || users.length === 0) {
+                users = _someUsers;
+                _saveUsersToFile(users)
+            };
             return users;
         })
 }
+
 function _saveUsersToFile(users) {
     fs.writeFileSync('data/user.json', JSON.stringify(users, null, 2));
 }

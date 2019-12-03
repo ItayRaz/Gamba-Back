@@ -8,6 +8,9 @@ const cors = require('cors');
 
 const app = express();
 
+const http = require('http').createServer(app);
+const io = require('socket.io')(http);
+
 app.use(express.static('public'));
 app.use(cookieParser());
 app.use(bodyParser.json());

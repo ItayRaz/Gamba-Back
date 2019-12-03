@@ -8,8 +8,9 @@ const cors = require('cors');
 
 const app = express();
 
-// const http = require('http').createServer(app);
-// const io = require('socket.io')(http);
+const http = require('http').createServer(app);
+const io = require('socket.io')(http);
+
 
 app.use(express.static('public'));
 app.use(cookieParser());
@@ -22,6 +23,9 @@ app.use(session({
 }));
 app.use(cors());
 
+
+const connectToSockets = require('./api/socket/socket.rout.js')
+
 const eventoRout = require('./api/evento/evento.rout.js');
 const userRout = require('./api/user/user.rout.js');
 const reviewRout = require('./api/review/review.rout.js');
@@ -30,4 +34,8 @@ app.use('/api/evento', eventoRout);
 app.use('/api/user', userRout);
 app.use('/api/review', reviewRout);
 
-module.exports = app;
+
+connectToSockets(io);
+
+// module.exports = app;
+module.exports = http;

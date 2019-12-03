@@ -1,8 +1,7 @@
 'use strict';
 
-const fs = require('fs');
-
-const utils = require('../../services/util.service.js');
+const dbService = require('../../services/db.service.js');
+const ObjectId = require('mongodb').ObjectId;
 
 
 module.exports = {
@@ -13,98 +12,89 @@ module.exports = {
     login
 }
 
-function login({username, password}) {
-    return _createUsers()
-        .then(users => {
-            var user = users.find(user => user.username === username && user.password === password);
-            return new Promise((resolve, reject) => {
-                if (user) resolve(user);
-                else reject('not a valid user');
-            })
-        })
+async function login({username, password}) {
+    // if (!username || !password) throw Error('meissing input');
+    const collection = await _connectToCollection();
+    try {
+        var user = await collection.findOne({username, password});
+        delete user.password;
+        return user;
+    } catch(err) {
+        throw Error('not a valid user');
+    }
 }
 
 
-function get(_id) {
-    return _createUsers()
-        .then(users => {
-            var user = users.find(user => user._id === _id);
-            if (user) return Promise.resolve(user);
-            else return Promise.reject('something went wrong');
-        })
+async function get(_id) {
+    const collection = await _connectToCollection();
+    try {
+        var user = collection.findOne({"_id":ObjectId(_id)});
+        return user;
+    } catch(err) {
+        throw err
+    }
 }
 
-function save(user) {
-    return _createUsers()
-        .then(users => {
-            if (user._id) {
-                var idx = users.findIndex(currUser => currUser._id === user._id);
-                if (idx !== -1) {
-                    users.splice(idx, 1, user);
-                }
-            } else {
-                if (users.find(currUser => currUser.username === user.username)) {
-                    return Promise.reject('this user name is taken');
-                }
-                user._id = utils.getRandomId();
-                users.unshift(user);
-            }
-            _saveUsersToFile(users);
-            return Promise.resolve(user);
-        })
+async function save(user) {
+    const collection = await _connectToCollection();
+
+    if (user._id) {
+        try {
+            user._id = ObjectId(user._id);
+            await collection.updateOne({"_id":ObjectId(user._id)}, {$set: user});
+            return user;
+        } catch(err) {
+            throw err;
+        }
+    } else {
+        // if (await collection.findOne({username: user.username})) throw Error('user name is already in use')
+        try {
+            return await collection.insertOne(user);
+        } catch(err) {
+            throw err;
+        }
+    }
 }
 
-function remove(_id) {
-    return _createUsers()
-        .then(users => {
-            var idx = users.findIndex(user => user._id === _id);
-            if (idx !== -1) {
-                users.splice(idx, 1);
-                _saveUsersToFile(users);
-                return Promise.resolve(_id);
-            }
-            else return Promise.reject('user not found, could not delete');
-        })
+async function remove(_id) {
+    const collection = await _connectToCollection();
+    try {
+        return await collection.deleteOne({"_id":ObjectId(_id)});
+    } catch(err) {
+        throw err;
+    }
 }
 
-function query(filterBy = {}) {
-    return _createUsers()
-        .then(users => {
-            return getUsersToSend(users, filterBy);
-        })
-        .catch(err => Promise.reject('could not get users'))
+async function query(filterBy = {}) {
+    const collection = await _connectToCollection();
+    try {
+        var users = await collection.find({}).toArray();
+        if (!users || !users.length) {
+            await collection.insert(_someUsers)
+            return await collection.find({}).toArray();
+        }
+        else return users;
+    } catch(err) {
+        throw err;
+    }
 }
 
-function getUsersToSend(users, filterBy = {}) {
-    var usersToSend = [...users];
-    if (filterBy.searchStr) usersToSend = usersToSend.filter(user => user.name.toLowerCase().includes(filterBy.searchStr.toLowerCase()));
-    return usersToSend;
-}
+// function getUsersToSend(users, filterBy = {}) {
+//     var usersToSend = [...users];
+//     if (filterBy.searchStr) usersToSend = usersToSend.filter(user => user.name.toLowerCase().includes(filterBy.searchStr.toLowerCase()));
+//     return usersToSend;
+// }
 
-function _createUsers() {
-    return _loadUsersFromFile()
-        .then(users => {
-            if (!users || users.length === 0) {
-                users = _someUsers;
-                _saveUsersToFile(users)
-            };
-            return users;
-        })
-}
 
-function _saveUsersToFile(users) {
-    fs.writeFileSync('data/user.json', JSON.stringify(users, null, 2));
-}
-
-function _loadUsersFromFile() {
-    return Promise.resolve(require('../../data/user.json'));
+async function _connectToCollection() {
+    return await dbService.getCollection('user');
 }
 
 var _someUsers = [
     {
         "username": "Aviv",
         "password": "12345",
-        "_id": "12345",
+        // "_id": "12345",
         "isAdmin": true,
         "about": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cum, fuga accusamus! A, repellendus, doloribus excepturi accusamus rem odit delectus consectetur minus distinctio voluptatibus pariatur veniam eligendi culpa esse nihil quis.",
         "img": "https://api.adorable.io/avatars/285/aviv.png",
@@ -113,7 +103,7 @@ var _someUsers = [
       {
         "username": "Paz",
         "password": "123",
-        "_id": "123",
+        // "_id": "123",
         "isAdmin": false,
         "img": "https://api.adorable.io/avatars/285/paz.png",
         "createdAt": 1574952586961
@@ -121,7 +111,7 @@ var _someUsers = [
       {
         "username": "Itai",
         "password": "1234",
-        "_id": "1234",
+        // "_id": "1234",
         "isAdmin": false,
         "img": "https://api.adorable.io/avatars/285/itai.png",
         "createdAt": 1574952586961

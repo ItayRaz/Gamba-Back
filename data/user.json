@@ -1,7 +1,5 @@
 [
   {
-<<<<<<< HEAD
-    "username": "22",
     "password": "22",
     "isAdmin": false,
     "img": "",
@@ -125,8 +123,9 @@
     "about": "",
     "createdAt": 1575190999000,
     "_id": "B9016EC0B379B92152"
-=======
     "username": "popo1",
+=======
+    "username": "popo1!",
     "password": "popo",
     "isAdmin": false,
     "img": "",
@@ -275,8 +274,9 @@
     "_id": "12345",
     "isAdmin": true,
     "about": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cum, fuga accusamus! A, repellendus, doloribus excepturi accusamus rem odit delectus consectetur minus distinctio voluptatibus pariatur veniam eligendi culpa esse nihil quis.",
-    "img": "https://api.adorable.io/avatars/285/aviv.png",
-    "createdAt": 1574952586961
+    "img": "https://scontent.fhfa1-1.fna.fbcdn.net/v/t1.0-9/12670137_10204409955403854_4198873946764062239_n.jpg?_nc_cat=102&_nc_ohc=2Cxu02dpuTQAQnW14mCMe-d0SE3nvAyUMsOCogSqh6VoygjoRn-DByFQA&_nc_ht=scontent.fhfa1-1.fna&oh=997ec187593a1f10ecc90b1b962220e8&oe=5E466113",
+    "createdAt": 1574952586961,
+    "coverImg": "https://scontent.fhfa1-1.fna.fbcdn.net/v/t1.0-9/1453340_10200425886764628_101878751_n.jpg?_nc_cat=110&_nc_ohc=YTTSJ9mPuNQAQn4mGPY7rYTcVxw30irT63poXcomMAaeh5ny3H9l1tErQ&_nc_ht=scontent.fhfa1-1.fna&oh=2e4431e2bc3fa9160e52aa6813878e58&oe=5E7BD0DD"
   },
   {
     "username": "Paz",

@@ -17,7 +17,7 @@ async function login({username, password}) {
     const collection = await _connectToCollection();
     try {
         var user = await collection.findOne({username, password});
-        delete user.password;
+        // delete user.password;
         return user;
     } catch(err) {
         throw Error('not a valid user');

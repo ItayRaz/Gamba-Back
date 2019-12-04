@@ -1,7 +1,7 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "4d8480e54400d53e0633",
-    "url": "/css/app.e1225dd3.css"
+    "revision": "6bc0f7547ff02230cb79",
+    "url": "/css/app.5ce92168.css"
   },
   {
     "revision": "b7c84361bb122f2fddc3",
@@ -12,8 +12,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/fonts/PermanentMarker-Regular.c863f802.ttf"
   },
   {
-    "revision": "b4618f1f7f4cee0ac09873fcc5a966f9",
-    "url": "/fonts/RobotoMono-Regular.b4618f1f.ttf"
+    "revision": "11eabca2251325cfc5589c9c6fb57b46",
+    "url": "/fonts/Roboto-Regular.11eabca2.ttf"
   },
   {
     "revision": "535877f50039c0cb49a6196a5b7517cd",
@@ -32,6 +32,14 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/img/full.73d06d3b.png"
   },
   {
+    "revision": "e7e18c3d9b173da65e597f701f3478d9",
+    "url": "/img/gameday_svg.e7e18c3d.svg"
+  },
+  {
+    "revision": "03b3524d59bd4af78e7491f8b5a95d6e",
+    "url": "/img/hero.03b3524d.jpeg"
+  },
+  {
     "revision": "5a54dc18a385a34ca793060eb5c738ab",
     "url": "/img/hero.5a54dc18.jpg"
   },
@@ -44,16 +52,20 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/img/party.76f94227.jpg"
   },
   {
+    "revision": "c94c7e46e493810623769a749ae448a3",
+    "url": "/img/user_default.c94c7e46.png"
+  },
+  {
     "revision": "da7e58f831e51092cd6d6b81ef6efc5f",
     "url": "/img/wine4.da7e58f8.jpg"
   },
   {
-    "revision": "b6c2e3f71d0ce8f74330cba9fc0bde8e",
+    "revision": "0bc276e8e726afe05e622ed72f22e37b",
     "url": "/index.html"
   },
   {
-    "revision": "4d8480e54400d53e0633",
-    "url": "/js/app.11ff03c9.js"
+    "revision": "6bc0f7547ff02230cb79",
+    "url": "/js/app.de02f901.js"
   },
   {
     "revision": "b7c84361bb122f2fddc3",

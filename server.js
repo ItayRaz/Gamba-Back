@@ -11,7 +11,7 @@ const app = express();
 const http = require('http').createServer(app);
 const io = require('socket.io')(http);
 
-app.use(express.static('public'));
+// app.use(express.static('public'));
 app.use(cookieParser());
 app.use(bodyParser.json());
 
@@ -22,6 +22,10 @@ app.use(session({
     cookie: {secure: false}
 }));
 
+
+if (process.env.NODE_ENV === 'production') {
+    app.use(express.static(path.resolve(__dirname, 'public')));
+}
 
 // if (process.env.NODE_ENV !== 'production') {
 //     const corsOptions = {

@@ -23,22 +23,20 @@ app.use(session({
 }));
 
 
-if (process.env.NODE_ENV === 'production') {
-    app.use(express.static(path.resolve(__dirname, 'public')));
-}
 
-// if (process.env.NODE_ENV !== 'production') {
-//     const corsOptions = {
-//         origin: ['http://127.0.0.1:8080','http://localhost:8080'],
-//         credentials: true
-//     };
-//     app.use(cors(corsOptions));
-// }
-const corsOptions = {
-    origin: ['http://localhost:8080', 'http://127.0.0.1:8080'],
-    credentials: true
-};
-app.use(cors(corsOptions));
+
+if (process.env.NODE_ENV !== 'production') {
+    const corsOptions = {
+        origin: ['http://127.0.0.1:8080','http://localhost:8080'],
+        credentials: true
+    };
+    app.use(cors(corsOptions));
+}
+// const corsOptions = {
+//     origin: ['http://localhost:8080', 'http://127.0.0.1:8080'],
+//     credentials: true
+// };
+// app.use(cors(corsOptions));
 
 
 const eventoRout = require('./api/evento/evento.rout.js');
@@ -50,6 +48,11 @@ app.use('/api/evento', eventoRout);
 app.use('/api/user', userRout);
 app.use('/api/review', reviewRout);
 connectToSockets(io);
+
+
+if (process.env.NODE_ENV === 'production') {
+    app.use(express.static(path.resolve(__dirname, 'public')));
+}
 
 // module.exports = app;
 module.exports = http;

@@ -52,10 +52,11 @@ async function remove(_id) {
     }
 }
 
-async function query(filterBy = {}) {    
+async function query(filterBy = {}) {
     const collection = await _conectToCollection()
     try {
         return await collection.find({}).toArray();
+        // return await collection.find(filterBy).toArray();
     } catch (err) {
         throw err;
     }

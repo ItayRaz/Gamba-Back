@@ -47,9 +47,14 @@ async function save(user) {
             throw err;
         }
     } else {
+        // var checkUser = await collection.findOne({username: user.username, password: user.password});
         // if (await collection.findOne({username: user.username})) throw Error('user name is already in use')
         try {
-            return await collection.insertOne(user);
+            var checkUser = await collection.findOne({username: user.username});
+            if (checkUser) {
+                throw Error('User name is already taken');
+            }
+            else return await collection.insertOne(user);
         } catch(err) {
             throw err;
         }

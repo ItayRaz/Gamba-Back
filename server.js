@@ -22,11 +22,19 @@ app.use(session({
     cookie: {secure: false}
 }));
 
-const corsOptions = {
-    origin: ['http://localhost:8080', 'http://127.0.0.1:8080'],
-    credentials: true
-};
-app.use(cors(corsOptions));
+
+if (process.env.NODE_ENV !== 'production') {
+    const corsOptions = {
+        origin: ['http://127.0.0.1:8080','http://localhost:8080'],
+        credentials: true
+    };
+    app.use(cors(corsOptions));
+}
+// const corsOptions = {
+//     origin: ['http://localhost:8080', 'http://127.0.0.1:8080'],
+//     credentials: true
+// };
+// app.use(cors(corsOptions));
 
 
 const eventoRout = require('./api/evento/evento.rout.js');

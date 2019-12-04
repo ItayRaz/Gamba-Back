@@ -7,8 +7,7 @@ const MongoClient = require('mongodb').MongoClient;
 mongodb+srv://gerti:gerti764@cluster0-na2km.mongodb.net/test?retryWrites=true&w=majority*/
 
 const dbURL = (false && process.env.NODE_ENV === 'production')? 
-    'mongodb+srv://gerti:gerti764@cluster0-na2km.mongodb.net/test?retryWrites=true&w=majority'
-    // 'mongodb+srv://theDbUser:camay2019@cluster0-klgzh.mongodb.net/test?retryWrites=true&w=majority' 
+    'mongodb+srv://gerti:gerti764m@cluster0-na2km.mongodb.net/test?retryWrites=true&w=majority'
     : 'mongodb://localhost:27017';
 
 
@@ -31,7 +30,8 @@ async function getCollection(collectionName) {
 async function connect() {
     if (dbConn) return dbConn;
     try {
-        const client = await MongoClient.connect(dbURL, {useNewUrlParser: true});
+        // const client = await MongoClient.connect(dbURL, {useNewUrlParser: true});
+        const client = await new MongoClient(dbURL, {useNewUrlParser: true});
         const db = client.db(dbName);
         dbConn = db;
         return db;

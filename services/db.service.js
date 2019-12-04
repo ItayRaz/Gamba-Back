@@ -2,7 +2,17 @@
 
 const MongoClient = require('mongodb').MongoClient;
 
-const dbURL  =  'mongodb://localhost:27017'
+// const dbURL  =  'mongodb://localhost:27017'
+/*
+mongodb+srv://gerti:gerti764@cluster0-na2km.mongodb.net/test?retryWrites=true&w=majority*/
+
+const dbURL = (false && process.env.NODE_ENV === 'production')? 
+    'mongodb+srv://gerti:gerti764@cluster0-na2km.mongodb.net/test?retryWrites=true&w=majority'
+    // 'mongodb+srv://theDbUser:camay2019@cluster0-klgzh.mongodb.net/test?retryWrites=true&w=majority' 
+    : 'mongodb://localhost:27017';
+
+
+
 
 module.exports = {
     getCollection

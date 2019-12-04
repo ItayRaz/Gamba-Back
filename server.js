@@ -39,7 +39,5 @@ app.use('/api/user', userRout);
 app.use('/api/review', reviewRout);
 connectToSockets(io);
 
-
-
 // module.exports = app;
 module.exports = http;

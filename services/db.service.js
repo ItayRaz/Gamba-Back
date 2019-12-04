@@ -6,12 +6,12 @@ const MongoClient = require('mongodb').MongoClient;
 /*
 mongodb+srv://gerti:gerti764@cluster0-na2km.mongodb.net/test?retryWrites=true&w=majority*/
 
-const dbURL = (false && process.env.NODE_ENV === 'production')? 
-    'mongodb+srv://paz:9imG%40Y4feHeDqyh@cluster0-na2km.mongodb.net/test?retryWrites=true&w=majority'
-    : 'mongodb://localhost:27017';
+// const dbURL = (false && process.env.NODE_ENV === 'production')? 
+//     'mongodb+srv://paz:9imG%40Y4feHeDqyh@cluster0-na2km.mongodb.net/test?retryWrites=true&w=majority'
+//     : 'mongodb://localhost:27017';
 
-// const dbURL = 
-//     'mongodb+srv://gerti:gerti764m@cluster0-na2km.mongodb.net/test?retryWrites=true&w=majority';
+const dbURL = 
+    'mongodb+srv://paz:9imG%40Y4feHeDqyh@cluster0-na2km.mongodb.net/test?retryWrites=true&w=majority'
 
     // 9imG@Y4feHeDqyh
 module.exports = {

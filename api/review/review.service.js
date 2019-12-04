@@ -53,7 +53,8 @@ async function remove(_id) {
 async function query(filterBy = {}) {
     const collection = await _connectToCollection();
     try {
-        var reviews = await collection.find({}).toArray();
+        // var reviews = await collection.find({}).toArray();
+        var reviews = await collection.find(filterBy).toArray();
         if (!reviews || !reviews.length) {
             await collection.insert(_someReviews);
             return collection.find({}).toArray();

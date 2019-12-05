@@ -11,7 +11,7 @@ const app = express();
 const http = require('http').createServer(app);
 const io = require('socket.io')(http);
 
-// app.use(express.static('public'));
+app.use(express.static('public'));
 app.use(cookieParser());
 app.use(bodyParser.json());
 
@@ -50,9 +50,9 @@ app.use('/api/review', reviewRout);
 connectToSockets(io);
 
 
-if (process.env.NODE_ENV === 'production') {
-    app.use(express.static(path.resolve(__dirname, 'public')));
-}
+// if (process.env.NODE_ENV === 'production') {
+//     app.use(express.static(path.resolve(__dirname, 'public')));
+// }
 
 // module.exports = app;
 module.exports = http;

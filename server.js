@@ -1,10 +1,14 @@
 'use strict';
 
+// require('dotenv').config({ path: 'variables.env' });
+
 const express = require('express');
 const bodyParser = require('body-parser');
 const cors = require('cors');
 const cookieParser = require('cookie-parser');
 const session = require('express-session');
+
+const webPush = require('web-push');
 
 const app = express();
 
@@ -36,7 +40,6 @@ const corsOptions = {
 };
 app.use(cors(corsOptions));
 
-
 const eventoRout = require('./api/evento/evento.rout.js');
 const userRout = require('./api/user/user.rout.js');
 const reviewRout = require('./api/review/review.rout.js');
@@ -46,6 +49,24 @@ app.use('/api/evento', eventoRout);
 app.use('/api/user', userRout);
 app.use('/api/review', reviewRout);
 connectToSockets(io);
+
+
+// const publicVapidKey = process.env.PUBLIC_VAPID_KEY;
+// const privateVapidKey = process.env.PRIVATE_VAPID_KEY;
+
+// console.log('public:', publicVapidKey)
+// console.log('private:', privateVapidKey)
+
+// webPush.setVapidDetails('mailto:test@example.com', publicVapidKey, privateVapidKey);
+
+// app.post('/sabscribe', (req, res) => {
+//     res.status(201).json({});
+
+//     webPush(sendNotification(req.nody, JSON.stringify({
+//         title: 'title'
+//     }))).catch(console.log);
+// })
+
 
 // module.exports = app;
 module.exports = http;

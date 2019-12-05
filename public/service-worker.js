@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/precache-manifest.54a67160ade9451dcaa277e188cd2ab8.js"
+  "/precache-manifest.63a69f0c55a664e2cc982255e71a6638.js"
 );
 
 workbox.core.setCacheNameDetails({prefix: "gamba"});

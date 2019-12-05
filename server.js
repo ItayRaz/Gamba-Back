@@ -1,6 +1,6 @@
 'use strict';
 
-// require('dotenv').config({ path: 'variables.env' });
+require('dotenv').config({ path: 'variables.env' });
 
 const express = require('express');
 const bodyParser = require('body-parser');
@@ -8,7 +8,7 @@ const cors = require('cors');
 const cookieParser = require('cookie-parser');
 const session = require('express-session');
 
-const webPush = require('web-push');
+// const webPush = require('web-push');
 
 const app = express();
 
@@ -25,8 +25,6 @@ app.use(session({
     saveUninitialized: true,
     cookie: {secure: false}
 }));
-
-
 
 
 if (process.env.NODE_ENV !== 'production') {

@@ -1,1 +1,20 @@
-{"name":"front","short_name":"front","theme_color":"#4DBA87","icons":[{"src":"./img/icons/android-chrome-192x192.png","sizes":"192x192","type":"image/png"},{"src":"./img/icons/android-chrome-512x512.png","sizes":"512x512","type":"image/png"}],"start_url":".","display":"standalone","background_color":"#000000"}
+{
+    "name": "gamba",
+    "short_name": "gamba",
+    "theme_color": "#f44336",
+    "icons": [
+        {
+            "src": "./img/icons/logo.png",
+            "sizes": "192x192",
+            "type": "image/png"
+        },
+        {
+            "src": "./img/icons/log.png",
+            "sizes": "512x512",
+            "type": "image/png"
+        }
+    ],
+    "start_url": ".",
+    "display": "standalone",
+    "background_color": "#000000"
+}

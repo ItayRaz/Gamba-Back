@@ -3,10 +3,16 @@
 module.exports = {
     getRandomId,
     saveToStorage,
-    loadFromStorage
+    loadFromStorage,
+    updateTimestamp
 }
 
 
+function updateTimestamp(timeStamp, updateBy, toTime = Date.now()) {
+    timeStamp += updateBy;
+    if (timeStamp < toTime) timeStamp = updateTimestampToBy(timeStamp, updateBy, toTime);
+    return timeStamp;
+}
 
 function getRandomId() {
     var pt1 = Date.now().toString(16);

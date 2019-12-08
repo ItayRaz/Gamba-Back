@@ -32,3 +32,14 @@ self.addEventListener('message', (event) => {
  */
 self.__precacheManifest = [].concat(self.__precacheManifest || []);
 workbox.precaching.precacheAndRoute(self.__precacheManifest, {});
+
+
+
+
+self.addEventListener('push', ev => {
+  const data = ev.data.json();
+
+  self.registration.showNotification(data.title, {
+      body: 'some txt'
+  });
+});

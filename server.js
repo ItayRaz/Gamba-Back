@@ -1,14 +1,10 @@
 'use strict';
 
-// require('dotenv').config({ path: 'variables.env' });
-
 const express = require('express');
 const bodyParser = require('body-parser');
 const cors = require('cors');
 const cookieParser = require('cookie-parser');
 const session = require('express-session');
-
-// const webPush = require('web-push');
 
 const app = express();
 
@@ -26,21 +22,14 @@ app.use(session({
     cookie: {secure: false}
 }));
 
-
-
-
 if (process.env.NODE_ENV !== 'production') {
     const corsOptions = {
-        origin: ['http://127.0.0.1:8080','http://localhost:8080'],
+        origin: ['http://127.0.0.1:8080', 'http://localhost:8080'],
         credentials: true
     };
     app.use(cors(corsOptions));
 }
-// const corsOptions = {
-//     origin: ['http://localhost:8080', 'http://127.0.0.1:8080'],
-//     credentials: true
-// };
-// app.use(cors(corsOptions));
+
 
 const eventoRout = require('./api/evento/evento.rout.js');
 const userRout = require('./api/user/user.rout.js');
@@ -53,12 +42,13 @@ app.use('/api/review', reviewRout);
 connectToSockets(io);
 
 
+// require('dotenv').config({ path: 'variables.env' });
+// const webPush = require('web-push');
 
-// const publicVapidKey = process.env.PUBLIC_VAPID_KEY;
-// const privateVapidKey = process.env.PRIVATE_VAPID_KEY;
+// const publicVapidKey = process.env.PUBLIC_VAPID_KEY;    //'PUBLIC_VAPID_KEY'
+// const privateVapidKey = process.env.PRIVATE_VAPID_KEY;    //'PRIVATE_VAPID_KEY'
 
-// console.log('public:', publicVapidKey)
-// console.log('private:', privateVapidKey)
+// console.log(webPush['generate-vapid-keys']);
 
 // webPush.setVapidDetails('mailto:test@example.com', publicVapidKey, privateVapidKey);
 
@@ -71,5 +61,4 @@ connectToSockets(io);
 // })
 
 
-// module.exports = app;
 module.exports = http;

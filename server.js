@@ -66,7 +66,7 @@ webPush.setVapidDetails('mailto:test@example.com', publicVapidKey, privateVapidK
 app.post('/sabscribe', (req, res) => {
     res.status(201).json({});
 
-    webPush(sendNotification(req.nody, JSON.stringify({
+    webPush(sendNotification(req.body, JSON.stringify({
         title: 'title'
     }))).catch(console.log);
 })

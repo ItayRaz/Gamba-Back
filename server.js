@@ -54,22 +54,36 @@ app.get('*', (req, res) => {
 
 
 // require('dotenv').config({ path: 'variables.env' });
-const webPush = require('web-push');
+// const webPush = require('web-push');
 
 // const publicVapidKey = process.env.PUBLIC_VAPID_KEY;    //'PUBLIC_VAPID_KEY'
 // const privateVapidKey = process.env.PRIVATE_VAPID_KEY;    //'PRIVATE_VAPID_KEY'
-const publicVapidKey = 'BKHooCZ_NqCiuF7vQUSxiF7OKmJynbW1T4hnbun9jh_n-NgmF-4FGw5dRhrZWQlsiAq6QIM0ipbq38M7FuJK9ec';
-const privateVapidKey = 'L86zaJh_UR3vBxvI4b-7hDPFqo0GrSzhtof9OsDVjKQ';
+// const publicVapidKey = 'BKHooCZ_NqCiuF7vQUSxiF7OKmJynbW1T4hnbun9jh_n-NgmF-4FGw5dRhrZWQlsiAq6QIM0ipbq38M7FuJK9ec';
+// const privateVapidKey = 'L86zaJh_UR3vBxvI4b-7hDPFqo0GrSzhtof9OsDVjKQ';
 
-webPush.setVapidDetails('mailto:test@example.com', publicVapidKey, privateVapidKey);
+// webPush.setVapidDetails('mailto:test@example.com', publicVapidKey, privateVapidKey);
 
-app.post('/subscribe', (req, res) => {
-    res.status(201).json({});
+// app.post('/subscribe', (req, res) => {
+//     console.log('111')
+//     console.log(req);
+    
+//     res.status(201).json({});
+//     console.log(webPush.sendNotification);
+    
+//     var sub = JSON.stringify({
+//         title: 'title'        
+//     })
 
-    webPush(sendNotification(req.body, JSON.stringify({
-        title: 'title'
-    }))).catch(console.log);
-})
+    
+//     webPush.sendNotification(req.body, sub).catch(console.log);
+//     console.log('2222');
+
+//     // webPush.sendNotification(req.body, JSON.stringify({
+//     //     title: 'title'        
+//     // })).catch(console.log);
+//     // console.log('2222');
+    
+// })
 
 
 module.exports = http;

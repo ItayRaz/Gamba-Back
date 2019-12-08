@@ -5,13 +5,14 @@ const bodyParser = require('body-parser');
 const cors = require('cors');
 const cookieParser = require('cookie-parser');
 const session = require('express-session');
+const path = require('path');
 
 const app = express();
 
 const http = require('http').createServer(app);
 const io = require('socket.io')(http);
 
-app.use(express.static('public'));
+// app.use(express.static('public'));
 app.use(cookieParser());
 app.use(bodyParser.json());
 
@@ -19,7 +20,7 @@ app.use(session({
     secret: 'some secret shit',
     resave: false,
     saveUninitialized: true,
-    cookie: {secure: false}
+    cookie: { secure: false }
 }));
 
 if (process.env.NODE_ENV !== 'production') {
@@ -29,6 +30,10 @@ if (process.env.NODE_ENV !== 'production') {
     };
     app.use(cors(corsOptions));
 }
+app.use(express.static(path.resolve(__dirname, 'public')));
+
+
+
 
 
 const eventoRout = require('./api/evento/evento.rout.js');
@@ -40,6 +45,12 @@ app.use('/api/evento', eventoRout);
 app.use('/api/user', userRout);
 app.use('/api/review', reviewRout);
 connectToSockets(io);
+
+app.get('*', (req, res) => {
+    res.sendFile(path.join(__dirname, 'public', 'index.html'));
+    // console.log(path);
+
+})
 
 
 // require('dotenv').config({ path: 'variables.env' });

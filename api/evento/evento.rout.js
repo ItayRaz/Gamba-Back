@@ -23,7 +23,7 @@ router.post(API, midlewareService.userValidation, (req, res) => {
     eventoController.add(req, res);
 })
 
-router.put(API + ':_id', midlewareService.userValidation, (req, res) => {
+router.put(API + ':_id',  (req, res) => {
     eventoController.update(req, res);
 })
 

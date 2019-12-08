@@ -30,15 +30,10 @@ if (process.env.NODE_ENV !== 'production') {
     };
     app.use(cors(corsOptions));
 }
-// app.use(express.static(path.resolve(__dirname, 'public')));
-app.use(express.static('public'));
+app.use(express.static(path.resolve(__dirname, 'public')));
 
 
-app.get('*', (req, res) => {
-    res.sendFile(path.join(__dirname, 'public', 'index.html'));
-    // console.log(path);
 
-})
 
 
 const eventoRout = require('./api/evento/evento.rout.js');
@@ -50,6 +45,12 @@ app.use('/api/evento', eventoRout);
 app.use('/api/user', userRout);
 app.use('/api/review', reviewRout);
 connectToSockets(io);
+
+app.get('*', (req, res) => {
+    res.sendFile(path.join(__dirname, 'public', 'index.html'));
+    // console.log(path);
+
+})
 
 
 // require('dotenv').config({ path: 'variables.env' });

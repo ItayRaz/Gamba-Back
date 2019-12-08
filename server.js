@@ -53,7 +53,7 @@ app.get('*', (req, res) => {
 })
 
 
-require('dotenv').config({ path: 'variables.env' });
+// require('dotenv').config({ path: 'variables.env' });
 const webPush = require('web-push');
 
 // const publicVapidKey = process.env.PUBLIC_VAPID_KEY;    //'PUBLIC_VAPID_KEY'

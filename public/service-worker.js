@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/precache-manifest.9952cd9af121757dd2b80d78caa5e5ff.js"
+  "/precache-manifest.b0923dc99bd1a1e5a81abc081908ab47.js"
 );
 
 workbox.core.setCacheNameDetails({prefix: "gamba"});
@@ -32,13 +32,3 @@ self.addEventListener('message', (event) => {
  */
 self.__precacheManifest = [].concat(self.__precacheManifest || []);
 workbox.precaching.precacheAndRoute(self.__precacheManifest, {});
-
-
-
-self.addEventoListener('push', ev => {
-  const data = ev.data.json();
-
-  self.registration.showNotification(data.title, {
-      body: 'some txt'
-  });
-});

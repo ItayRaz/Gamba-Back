@@ -7,12 +7,23 @@ module.exports = connectSockets;
 
 function connectSockets(io) {
     io.on('connection', socket => {
+        socket.on('joinRoom', roomName => {
+            socket.join(roomName);
+            socket.room = roomName;
+        });
+        socket.on('leaveRoom', roomName => {
+            socket.leave(socket.room);
+            socket.leave(roomName);
+            // socket.room = null;
+            delete socket.room;
+        });
+
         socket.on('newComment', async ({comment, eventoId}) => {
             
             var commentToSend = await saveComment(comment, eventoId);
             io.to(socket.room).emit('addComment', {comment: commentToSend, room: socket.room});
             
-            if (comment.txt = 'Gamba') {
+            if (comment.txt === 'Gamba') {
                 setTimeout( async () => {
                     var systemComment = await saveComment(getSystemComment('Pilpel'), eventoId);
                     io.to(socket.room).emit('addComment', {comment: systemComment, room: socket.room});
@@ -21,17 +32,10 @@ function connectSockets(io) {
 
             // io.to(socket.room).broadcast('addComment', comment);
         });
-        socket.on('joinRoom', roomName => {
-            socket.join(roomName);
-            socket.room = roomName;
-        });
-        socket.on('leaveRoom', roomName => {
-            socket.leave(socket.room);
-            socket.leave(roomName);
-            socket.room = null;
-            delete socket.room;
-            console.log('user left room', roomName);
-        });
+
+        socket.on('newEvento', evento => {
+            io.to('all-clients').emit('EventoAdded', evento);
+        })
     });
 }
 

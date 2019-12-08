@@ -1,5 +1,7 @@
 'use strict';
 
+const utils = require('../../services/util.service.js')
+
 const dbService = require('../../services/db.service.js')
 const ObjectId = require('mongodb').ObjectId;
 
@@ -55,8 +57,16 @@ async function remove(_id) {
 async function query(filterBy = {}) {
     const collection = await _conectToCollection()
     try {
-        return await collection.find({}).toArray();
         // return await collection.find(filterBy).toArray();
+        var eventos = await collection.find({}).toArray();
+        eventos.forEach(async evento => {
+            if (evento.time.start < Date.now()) {
+                evento.time.start = utils.updateTimestamp(evento.time.start, (1000*60*60*24*30));
+                // while (evento.time.start < Date.now()) {evento.time.start += (1000*60*60*24*30)}
+                await save(evento);
+            }
+        })
+        return eventos;
     } catch (err) {
         throw err;
     }

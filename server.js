@@ -33,9 +33,6 @@ if (process.env.NODE_ENV !== 'production') {
 app.use(express.static(path.resolve(__dirname, 'public')));
 
 
-
-
-
 const eventoRout = require('./api/evento/evento.rout.js');
 const userRout = require('./api/user/user.rout.js');
 const reviewRout = require('./api/review/review.rout.js');
@@ -63,13 +60,13 @@ const privateVapidKey = 'L86zaJh_UR3vBxvI4b-7hDPFqo0GrSzhtof9OsDVjKQ';
 
 webPush.setVapidDetails('mailto:test@example.com', publicVapidKey, privateVapidKey);
 
-app.post('/sabscribe', (req, res) => {
+app.post('/subscribe', (req, res) => {
     res.status(201).json({});
 
-    webPush(sendNotification(req.nody, JSON.stringify({
+    webPush.sendNotification(req.body, JSON.stringify({
         title: 'title'
-    }))).catch(console.log);
+    })).catch(console.log);
 })
-
+ 
 
 module.exports = http;

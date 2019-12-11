@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/precache-manifest.9952cd9af121757dd2b80d78caa5e5ff.js"
+  "/precache-manifest.e3ec69be8e64d3a1f5606bfb50673a4a.js"
 );
 
 workbox.core.setCacheNameDetails({prefix: "gamba"});
@@ -39,6 +39,7 @@ self.addEventoListener('push', ev => {
   const data = ev.data.json();
 
   self.registration.showNotification(data.title, {
-      body: 'some txt'
+      body: 'some txt',
+      // icon: '/logo.png'
   });
 });

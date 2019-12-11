@@ -25,7 +25,7 @@ app.use(session({
 
 if (process.env.NODE_ENV !== 'production') {
     const corsOptions = {
-        origin: ['http://127.0.0.1:8080', 'http://localhost:8080'],
+        origin: ['http://127.0.0.1:8080', 'http://localhost:8080', 'http://127.0.0.1:8081', 'http://localhost:8081'],
         credentials: true
     };
     app.use(cors(corsOptions));
@@ -61,11 +61,19 @@ const privateVapidKey = 'L86zaJh_UR3vBxvI4b-7hDPFqo0GrSzhtof9OsDVjKQ';
 webPush.setVapidDetails('mailto:test@example.com', publicVapidKey, privateVapidKey);
 
 app.post('/subscribe', (req, res) => {
+    
+    // webPush.sendNotification(req.body, JSON.stringify({
+        //     title: 'title'
+        // })).catch(console.log);
+        
+    var subscription = req.body.subscription;
+    var msg = req.body.msg;
+
     res.status(201).json({});
 
-    webPush.sendNotification(req.body, JSON.stringify({
-        title: 'title'
-    })).catch(console.log);
+    var payload = JSON.stringify(msg);
+
+    webPush.sendNotification(subscription, payload).catch(console.log);
 })
  
 

@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "5b5edfebe46fb3bd6d5b",
+    "revision": "8b3f5d103ae31e8a2557",
     "url": "/css/app.34601828.css"
   },
   {
@@ -56,12 +56,21 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/img/wine4.da7e58f8.jpg"
   },
   {
+<<<<<<< HEAD:public/precache-manifest.e3ec69be8e64d3a1f5606bfb50673a4a.js
     "revision": "d1e525444bfc939045845c1892c56a80",
     "url": "/index.html"
   },
   {
     "revision": "5b5edfebe46fb3bd6d5b",
     "url": "/js/app.78c93982.js"
+=======
+    "revision": "dca614ce7d52f27ae9ae5387ee4127ec",
+    "url": "/index.html"
+  },
+  {
+    "revision": "8b3f5d103ae31e8a2557",
+    "url": "/js/app.5363d3d5.js"
+>>>>>>> 3dbb876d69b3274a6853786050b391c1e4b5628f:public/precache-manifest.916f5ea01dc9ded5b7b9235ba85b9288.js
   },
   {
     "revision": "68380714302fa359a097",
